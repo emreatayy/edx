@@ -8,6 +8,163 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <div class="header">
+    <img src="assets/img/edx-logo.svg" class="logo">
+    <div class="dropdown" data-dropdown>
+      <button class="link linkk" data-dropdown-button>Courses ↓</button>
+      <div class="dropdown-menu information-grid">
+        <div>
+          <div class="dropdown-heading">Courses By Subject</div>
+        </div>
+        <div>
+          <div class="dropdown-heading"></div>
+        </div>
+        <div>
+          <div class="dropdown-heading"></div>
+        </div>
+        <div>
+          <div class="dropdown-heading">
+            <p class="vac">View All Courses</p>
+          </div>
+        </div>
+        <div>
+          <hr class="hr">
+          <div class="dropdown-links">
+            <a href="#" class="link">Architecture</a>
+            <a href="#" class="link">Art & Culture</a>
+            <a href="#" class="link">Biology & Life Sciences</a>
+            <a href="#" class="link">Chemistry</a>
+            <a href="#" class="link">Communication</a>
+            <a href="#" class="link">Computer Science</a>
+            <a href="#" class="link">Data Analysis & Statistics</a>
+          </div>
+        </div>
+        <div>
+          <hr class="hr">
+          <div class="dropdown-links">
+            <a href="#" class="link">Design</a>
+            <a href="#" class="link">Economics & Finance</a>
+            <a href="#" class="link">Education & Teacher</a>
+            <a href="#" class="link">Training</a>
+            <a href="#" class="link">Electronics</a>
+            <a href="#" class="link">Energy & Earth Sciences</a>
+            <a href="#" class="link">Engineering</a>
+            <a href="#" class="link">Environment Studies</a>
+            <a href="#" class="link">Ethics</a>
+          </div>
+        </div>
+        <div>
+          <hr class="hr">
+          <div class="dropdown-links">
+            <a href="#" class="link">Food & Nutrition</a>
+            <a href="#" class="link">Health & Safety</a>
+            <a href="#" class="link">History</a>
+            <a href="#" class="link">Humanities</a>
+            <a href="#" class="link">Language</a>
+            <a href="#" class="link">Law</a>
+            <a href="#" class="link">Literature</a>
+            <a href="#" class="link">Math</a>
+          </div>
+        </div>
+        <div>
+          <hr class="hr">
+          <div class="dropdown-links">
+            <a href="#" class="link">Medicine</a>
+            <a href="#" class="link">Music</a>
+            <a href="#" class="link">Philanthropy</a>
+            <a href="#" class="link">Philosoph & Ethics</a>
+            <a href="#" class="link">Physics</a>
+            <a href="#" class="link">Science</a>
+            <a href="#" class="link">All Subjects >></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="dropdown" data-dropdown>
+      <button class="link linkk" data-dropdown-button>Program & Degrees ↓</button>
+      <div class="dropdown-menu information-grid-1">
+        <div>
+          <div class="dropdown-heading">Pathways for your advancement</div>
+        </div>
+        <div>
+          <div class="dropdown-heading">
+            <p class="cprog">Compare Program</p>
+          </div>
+        </div>
+        <div>
+          <hr class="hr">
+          <div class="dropdown-links">
+            <div class="pd">
+              <a href="#" class="link">Executive Education</a>
+              <p>Expert-led, fully supported courses that build career-critical skills</p>
+            </div>
+            <div class="pd">
+              <a href="#" class="link">Professional Certificates</a>
+              <p>From employers or universite to build today's in-demand skills</p>
+            </div>
+            <div class="pd">
+              <a href="#" class="link">Master's Degrees</a>
+              <p>Online degree program from top universites</p>
+            </div>
+            <div class="pd">
+              <a href="#" class="link">MicroMasters®Program</a>
+              <p>Graduate-level, for career advancement or a degree path</p>
+            </div>
+            <div class="pd">
+              <a href="#" class="link">Bachelor's Degrees</a>
+              <p>Begin or complete a degree; fully online</p>
+            </div>
+            <div class="pd">
+              <a href="#" class="link">MicroBachelors®Programs</a>
+              <p>Undergraduate-leve, for career advancement or a degree path</p>
+            </div>
+            <div class="pd">
+              <a href="#" class="link">XSeries</a>
+              <p>Serier of courses for a deep understanding of a topic</p>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div>
+          <hr class="hr">
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="link linkk">School & Partners</button>
+    </div>
+    <div class="search">
+      <input type="text" value="What do you want to learn?">
+      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+    </div>
+    <div class="account">
+        <a href="edX For Business">edX For Business</a>
+      <div class="login">
+        <a class="sgnin">Sign İn</a>
+        <a class="regstr">Register for free</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script>
+    document.addEventListener("click", e => {
+  const isDropdownButton = e.target.matches("[data-dropdown-button]")
+  if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
+
+  let currentDropdown
+  if (isDropdownButton) {
+    currentDropdown = e.target.closest("[data-dropdown]")
+    currentDropdown.classList.toggle("active")
+  }
+
+  document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+    if (dropdown === currentDropdown) return
+    dropdown.classList.remove("active")
+  })
+})
+  </script>
 </body>
 </html>
