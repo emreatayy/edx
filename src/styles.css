@@ -279,6 +279,10 @@ body{
   display: none;
 }
 
+.loginmobile{
+  display: none;
+}
+
 /* Header Mobile */
 
 @media only screen and (max-width: 400px){
