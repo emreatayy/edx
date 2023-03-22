@@ -122,25 +122,62 @@
 
       <!-- Mobile Menu -->
       <div class="m-menu">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+        <button onclick="mdrop()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+        </button>
       </div>
     </div>
+    <div class="loginmobile" id="loginmobile">
+      <ul>
+        <li>
+          <div>
+            <button>Sign In</button>
+            <button>Register</button>
+          </div>
+        </li>
+        <li>All Courses & Program</li>
+        <li>Degrees & Program</li>
+        <li>School & Partners</li>
+        <li>edX For Business</li>
+      </ul>
+    </div>
+    <div class="lgrad2" id="lgrad2"></div>
+
 
     <!-- Mobile Search Bar -->
     <div class="m-search-bar">
-      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+      <div>
+        <button onclick="msb()">
+          <svg id="msb" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>        
+        </button>     
+        <button onclick="msx()">
+          <svg id="msx" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </div>
     </div>
+
+    <!-- Mobile Search input -->
+    <div class="m-search-input" id="msi">
+      <div>
+        <input type="text" placeholder="Search online courses">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+      </div>
+    </div>
+
+    <!-- Mobile Search Linear gradient -->
+    <div class="lgrad" id="lgrad"></div>
 
     <!-- Windows Search Bar -->
     <div class="w-search-bar" id="wsbar" onclick="search()">
-      <input type="text" id="txt11">
+      <input type="text" id="txt11" placeholder="Emre">
       <label for="txt1"></label>
       
-      <button>
+      <button id="wsb">
         <span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"></path></svg>
         </span>
       </button>
+      <button id="wsb2">Search</button>
     </div>
 
     <!-- Windows Business Link -->
@@ -196,10 +233,53 @@ function out2() {
 }
 function search() {
   var wsearchbar = document.getElementById("wsbar");
-  wsearchbar.style.width = "500px";
-  wsearchbar.style.marginLeft = "100px";
+  var wsb = document.getElementById("wsb");
+  var wsb2 = document.getElementById("wsb2");
 
+  wsearchbar.addEventListener("focusin", (event) => {
+    wsearchbar.style.width="600px";
+    wsearchbar.style.marginLeft="120px";
+    wsb.style.display = "none";
+    wsb2.style.display = "block";
+  });
+
+  wsearchbar.addEventListener("focusout", (event) => {
+    wsearchbar.style.width="200px";
+    wsearchbar.style.marginLeft="580px";
+    wsb.style.display = "block";
+    wsb2.style.display = "none";
+  });
 }
+
+  function msb() {
+    var msi = document.getElementById("msi");
+    var msx = document.getElementById("msx");
+    var msb = document.getElementById("msb");
+    var lgrad = document.getElementById("lgrad");
+    msi.style.display = "block";
+    lgrad.style.display = "block";
+    msb.style.display = "none";
+    msx.style.display = "block";
+  }
+
+  function msx() {
+    var msi = document.getElementById("msi");
+    var msx = document.getElementById("msx");
+    var msb = document.getElementById("msb");
+    var lgrad = document.getElementById("lgrad");
+    msi.style.display = "none";
+    lgrad.style.display = "none";
+    msb.style.display = "block";
+    msx.style.display = "none";
+  }
+
+  function mdrop() {
+    var loginmobile = document.getElementById("loginmobile");
+    var lgrad2 = document.getElementById("lgrad2");
+
+    loginmobile.style.display = "block";
+    lgrad2.style.display = "block";
+  }
 </script>
 
 

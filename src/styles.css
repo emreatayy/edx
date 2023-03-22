@@ -123,6 +123,10 @@ body{
   background-color: rgb(238, 238, 238);
 }
 
+#wsb2{
+  display: none;
+}
+
 .w-search-bar button {
   border: 0;
   z-index: 999;
@@ -266,15 +270,24 @@ body{
   color: black;
 }
 
+/* Mobile search input */
+.m-search-input{
+  display: none;
+}
+
+.lgrad{
+  display: none;
+}
+
 /* Header Mobile */
 
 @media only screen and (max-width: 400px){
   .w-logo img{
     position: absolute;
     top: -250%;
-    height: 40px;
-    width: 100%;
-    height: 34px;
+    height: 50px;
+    width: 50px;
+    margin-left: 150px;
   }
   .w-menu{
     display: none;
@@ -284,20 +297,23 @@ body{
     display: block;
   }
 
-  .m-menu svg{
-    position: absolute;
+  .m-menu button{
+    position: relative;
     left: 20px;
     cursor: pointer;
+    border-radius: 16px;
   }
 
   .m-search-bar{
     display: block;
   }
 
-  .m-search-bar svg{
+  .m-search-bar button{
     position: absolute;
     right: 20px;
     cursor: pointer;
+    border: 0;
+    background-color: white;
   }
 
   .w-search-bar{
@@ -310,5 +326,98 @@ body{
 
   .w-login-out{
     display: none;
+  }
+
+  .m-search-input{
+    display:block;
+    position: absolute;
+    top: 76px;
+    background-color: rgb(231, 229, 229);
+    width: 100%;
+    height: 60px;
+  }
+
+  .m-search-input >div{
+    width: 90%;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5%;
+    display: flex;
+  }
+
+  .m-search-input >div>svg{
+    height: 50px;
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    z-index: 99999;
+  }
+
+  .m-search-input >div>input{
+    position: relative;
+    width: 400px
+  }
+
+  .m-search-input{
+    display: none;
+  }
+
+  .lgrad{
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 135px;
+    display: none;
+  }
+
+  #msx{
+    display: none;
+  }
+
+  .lgrad2{
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 77px;
+    display: none;
+    z-index: 2;
+  }
+  .loginmobile{
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    left: 3%;
+    width: 350px;
+    height: 250px;
+    display: none;
+    z-index: 3;
+  }
+
+  .loginmobile >ul{
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .loginmobile li{
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 3.8px 0;
+    font-size: 1.4rem;
+  }
+
+  .loginmobile button{
+    width: 170px;
+    height: 50px;
+    box-sizing: border-box;
   }
 }
