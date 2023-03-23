@@ -283,6 +283,10 @@ body{
   display: none;
 }
 
+.m-menu>:nth-child(2){
+  display: none;
+}
+
 /* Header Mobile */
 
 @media only screen and (max-width: 400px){
@@ -423,5 +427,56 @@ body{
     width: 170px;
     height: 50px;
     box-sizing: border-box;
+
+  }
+  
+  .loginmobile div >:nth-child(1){
+    background-color: black;
+    color: white;
+  }
+
+  .loginmobile div >:nth-child(2){
+    background-color: red;
+    color: white;
+  }
+  
+  .drop-li svg:nth-child(1){
+    position: absolute;
+    height: 20px;
+    top: 125px;
+    width: 350px;
+    height: 30px;
+    left: 0;
+    padding-left: 300px;
+    box-sizing: border-box;
+    display: block;
+  }
+  .drop-li svg:nth-child(2){
+    position: absolute;
+    height: 20px;
+    top: 125px;
+    width: 350px;
+    height: 30px;
+    left: 0;
+    padding-left: 300px;
+    box-sizing: border-box;
+    display: none;
+  }
+
+  .drop-li ul{
+    list-style-type: none;
+    display: none;
+  }
+
+  .drop-li li{
+    border: 0;
+  }
+
+
+
+
+
+  .m-menu>:nth-child(2){
+    display: none;
   }
 }
