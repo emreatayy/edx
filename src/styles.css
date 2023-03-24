@@ -453,7 +453,7 @@ body{
   display: none;
 }
 
-
+/* New on edX */
  
 
 /* -------------------------------------------
@@ -736,8 +736,6 @@ body{
     color: white;
     margin-left: 10px;
   }
-
-
 
   .grid-container {
     display: grid;
