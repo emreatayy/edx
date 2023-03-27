@@ -328,6 +328,8 @@
           <button onclick="bachelor()" >Bachelor's Degrees</button>
         </div>
         <div class="c_w_contant">
+
+
           <div class="c_w_executive" id="executive">
             <div class="Sliderman">
               <button class="left-btn" id="left-btn" onclick="sliderbtn(-1)">
@@ -926,7 +928,34 @@
               </div>
             </div>
           </div>
-          <div class="c_w_master" id="master"></div>
+
+
+          <div class="c_w_master" id="master">
+            <div class="Sliderman">
+              <button class="left-btn" id="left-btn1" onclick="sliderbtn2(-1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"></path></svg>
+              </button>
+              <div class="index-btn1">
+                <button class="index-slide1"onclick="populer_show('pplr')">Popular</button>  
+                <button class="index-slide1" onclick="populer_show('mba')">MBA</button> 
+                <button class="index-slide1" onclick="populer_show('dSci')">Data Science</button>
+                <button class="index-slide1" onclick="populer_show('compS')">Computer Science</button>
+                <button class="index-slide1" onclick="populer_show('eng')">Engineering</button>
+                <button class="index-slide1" onclick="populer_show('analyt')">Analytics</button>
+                <button class="index-slide1" onclick="populer_show('cyb')">Cybersecurity</button>
+                <button class="index-slide1" onclick="populer_show('infMan')">Information Managment</button>
+                <button class="index-slide1" onclick="populer_show('hrM')">HR & Managment</button>
+                <button class="index-slide1" onclick="populer_show('GenBus')">General Business & Leadership</button>
+                <button class="index-slide1" onclick="populer_show('Coun')">Counselling</button>
+                <button class="index-slide1" onclick="populer_show('Heal')">Healthcare</button>
+                <button class="index-slide1" onclick="populer_show('lw')">Law</button>
+                <button class="index-slide1" onclick="populer_show('educ')">Education</button>         
+              </div>
+              <button class="right-btn" id="right-btn1" onclick="sliderbtn2(1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" fill="currentColor"></path></svg>
+              </button>
+            </div>
+          </div>
           <div class="c_w_bachelor" id="bachelor">
           </div>
           <a href="Explore"></a>
@@ -1184,6 +1213,49 @@ slider.addEventListener('mousemove', (e) => {
       r.style.visibility = "hidden"
     }
     if (slideIndex1 < 9) {
+      r.style.visibility = "visible"
+    }
+
+    for (i = 0; i < x.length-7; i=i+6) {
+      x[i].style.display = "none";  
+      x[i+1].style.display = "none"; 
+      x[i+2].style.display = "none";
+      x[i+3].style.display = "none";
+      x[i+4].style.display = "none";
+      x[i+5].style.display = "none";
+      x[i+6].style.display = "none";
+    }
+    x[slideIndex1-1].style.display = "flex";  
+    x[slideIndex1].style.display = "flex"; 
+    x[slideIndex1+1].style.display = "flex"; 
+    x[slideIndex1+2].style.display = "flex"; 
+    x[slideIndex1+3].style.display = "flex"; 
+    x[slideIndex1+4].style.display = "flex"; 
+    x[slideIndex1+5].style.display = "flex"; 
+  }
+
+  var slideIndex2 = 1;
+  function sliderbtn2(n) {
+    showDivs2(slideIndex2 += n);
+  }
+  function showDivs2(n){
+    var i;
+    var x = document.getElementsByClassName("index-slide1");
+    var l = document.getElementById("left-btn1");
+    var r = document.getElementById("right-btn1");
+
+    if (slideIndex2 ==2 ) {
+      l.style.visibility = "visible";
+    }
+
+    if (slideIndex2 ==1 ) {
+      l.style.visibility = "hidden";
+    }
+
+    if (slideIndex2 == 9) {
+      r.style.visibility = "hidden"
+    }
+    if (slideIndex2 < 9) {
       r.style.visibility = "visible"
     }
 
