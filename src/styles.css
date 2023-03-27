@@ -472,7 +472,6 @@ body{
 
  .c_w_executive{
   display: block;
-  background-color: bisque;
   width: 100%;
   height: 500px;
  }
@@ -504,8 +503,19 @@ body{
   justify-content: space-around;
   width: 100%;
  }
+ .index-btn1{
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+ }
 
 #left-btn{
+  visibility: hidden;
+}
+#left-btn1{
   visibility: hidden;
 }
 
@@ -513,7 +523,18 @@ body{
   display: none;
 }
 
+.index-btn1>:nth-child(n+8){
+  display: none;
+}
+
 .index-slide{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.index-slide1{
   display: flex;
   flex-direction: row;
   align-items: center;
