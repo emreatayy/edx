@@ -447,9 +447,9 @@ body{
 /* New on edX */
  .new-on-edx{
   position: absolute;
-  background-color: red;
-  margin-top: 1200px;
+  margin-top: 1700px;
   width: 1200px;
+  height: 700px;
   display: flex;
   flex-direction: column;
  }
@@ -467,7 +467,119 @@ body{
   border: 0;
   font-size: 1.25rem;
   margin-left: 10px;
+  margin-bottom: 10px;
  }
+
+ .c_w_executive{
+  display: block;
+  background-color: bisque;
+  width: 100%;
+  height: 500px;
+ }
+
+ .c_w_master{
+  display: none;
+  background-color: green;
+  width: 100%;
+  height: 500px;
+ }
+
+ .c_w_bachelor{
+  display: none;
+  background-color: yellow;
+  width: 100%;
+  height: 500px;
+ }
+
+ .Sliderman{
+  display: flex;
+  flex-direction: row;
+ }
+
+ .index-btn{
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+ }
+
+#left-btn{
+  visibility: hidden;
+}
+
+.index-btn>:nth-child(n+8){
+  display: none;
+}
+
+.index-slide{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slide-card{
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.slide-card div{
+  background-color: white;
+  width: 24%;
+  height: 400px;
+  box-shadow: 3px 3px 5px 5px #9c9c9c;
+}
+
+.slide-card div img{
+  width: 100%;
+  height: 140px;
+}
+
+.slide-card div>:nth-child(2){
+  width: 40%;
+  height: 80px;
+  background-color: white;
+  padding: 3px;
+  margin-left: 20px;
+  margin-top: -300px;
+}
+
+.slide-card div h2{
+  font-size: 1.34rem;
+  margin-left: 20px;
+  margin-top: -6px;
+}
+
+.slide-card div p{
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-top: -14px;
+}
+
+.slide-card div div{
+  position: relative;
+  font-size: 0.9rem;
+  bottom: 0;
+  left: 13px;
+  background-color: #d1d0cf;
+  width: 120px;
+  height: 16px;
+  padding: 0 3px;
+}
+
+.slide-card{
+  display: none;
+}
+#populer1{
+  display: flex;
+}
+
 /* -------------------------------------------
 ----------------------------------------------
 ----------------------------------------------
@@ -475,7 +587,6 @@ body{
 ---------------------------------------------- */
 /* Mobile */
 
-@media only screen and (max-width: 400px){
   @media only screen and (max-width: 400px){
     /* Header */
     .w-logo img{
@@ -493,7 +604,10 @@ body{
       display: none;
     }
     .m-menu{
+      position: absolute;
       display: block;
+      left: -80px;
+      top: -15px;
     }
   
     .m-menu button{
@@ -505,6 +619,7 @@ body{
   
     .m-search-bar{
       display: block;
+      margin-top: -20px;
     }
   
     .m-search-bar button{
@@ -671,7 +786,7 @@ body{
     }
   
     .hero-container{
-      position: absolute;
+      position: relative;
       background-color: #e1dddb;
       height: 450px;
       display: flex;
@@ -680,17 +795,16 @@ body{
       justify-content: center;
       width: 100%;
       margin-left: 0;
-      top: 78px;
+
     }
   
     .hero-container-main{
       position: absolute;
       margin-left: 0;
-      margin-top: -70px;
       width: 100%;
       height: 400px;
       box-sizing: border-box;
-      padding-left: 15px;
+      padding-left: 20px;
     }
     
     .hero-container-main h1{
@@ -727,12 +841,12 @@ body{
     }
   
     .fast-comp{
-      position: absolute;
+      position: relative;
       display: flex;
       width: 100%;
       height: 80px;
       background-color: #454545;
-      margin-top: 420px;
+      margin-top: 480px;
       margin-left: 0;
       transform: skew(0deg);
       align-items: center;
@@ -755,15 +869,13 @@ body{
   
     .grid-container {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      margin-left: 120px;
+      margin-left: -330px;
       margin-top: -100px;
-      overflow: hidden;
     }
   
     .grid-item {
       background: white;
+      width: 260px;
     }
     
     .main {
@@ -797,7 +909,7 @@ body{
       display: inline-block;
       background: white;
       min-height: 90px;
-      min-width: 120px;
+      min-width: 20px;
     }
     .item >img{
       width: 120px;
@@ -808,8 +920,12 @@ body{
     }
   
     .trust_text{
-      margin-left: 100px;
+      margin-left: -300px;
       font-size: 0.79rem;
     }
+
+    /* New On EDX */
+    .new-on-edx{
+      width: 100%;
+    }
   }
-}
