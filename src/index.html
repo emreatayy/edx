@@ -204,7 +204,7 @@
       <a href="">Register for free</a>
     </div>
   </div>
-  <div class="main-content"> 
+ <div class="main-content"> 
 
     <div class="hero-container">
       <div class="skew"></div>
@@ -216,12 +216,15 @@
         </form>
         <a href="">Explore all courses</a>
       </div>
-      <img src="assets/img/homepage.png" alt="">
+      <div class="background-splash">
+        <img src="assets/img/homepage.png" alt="">
+      </div>
       <div class="fast-comp">
         <img src="assets/img/fast-co.png" alt="">
         <p>Recognized for innovation in career-revelant learning</p>
       </div>
     </div>
+
     <div class="trust-bar">
       <div class="carousel">
         <div class="carousel-left" id="carousel-left">
@@ -315,46 +318,622 @@
     </div>
 
 
-    <!-- New on edX -->
+    <!-- New on edX  -->
     <div class="new-on-edx">
       <h2>New on edX</h2>
       <div class="course_w">
         <div class="c_w_containe">
-          <button>emre1</button>
-          <button>emre2</button>
-          <button>emre3</button>
+          <button onclick="executive()" >Executive Education</button>
+          <button onclick="master()" >Master's Degrees</button>
+          <button onclick="bachelor()" >Bachelor's Degrees</button>
         </div>
         <div class="c_w_contant">
-          <div class="c_w_header"></div>
-          <div class="c_w_main"></div>
-          <div class="c_w_footer">
-            <a href="Explore"></a>
+          <div class="c_w_executive" id="executive">
+            <div class="Sliderman">
+              <button class="left-btn" id="left-btn" onclick="sliderbtn(-1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"></path></svg>
+              </button>
+              <div class="index-btn">
+                <button class="index-slide"        
+                onclick="populer_show('populer1')">Popular</button>  
+                <button class="index-slide" onclick="populer_show('ai1')">AI & Transformayion</button> 
+                <button class="index-slide" onclick="populer_show('bus1')">Business Managment & Strategy</button>
+                <button class="index-slide" onclick="populer_show('data1')">Data Science & Analysis</button>
+                <button class="index-slide" onclick="populer_show('educ1')">Education</button>
+                <button class="index-slide" onclick="populer_show('fina1')">Finance, Investment</button>
+                <button class="index-slide" onclick="populer_show('fint1')">Fintech & Blockchain</button>
+                <button class="index-slide" onclick="populer_show('heal1')">Health & Wellbeing</button>
+                <button class="index-slide" onclick="populer_show('hr1')">HR & Managment</button>
+                <button class="index-slide" onclick="populer_show('infor1')">Information Technology</button>
+                <button class="index-slide" onclick="populer_show('lead1')">Leadership & Interpersonel Skills</button>
+                <button class="index-slide" onclick="populer_show('mark1')">Marketing, Sales & Design</button>
+                <button class="index-slide" onclick="populer_show('poli1')">Politics, Economics & Law</button>
+                <button class="index-slide" onclick="populer_show('proj1')">Project Managment</button>
+                <button class="index-slide" onclick="populer_show('sust1')">Sustainability</button>
+                
+              </div>
+              <button class="right-btn" id="right-btn" onclick="sliderbtn(1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" fill="currentColor"></path></svg>
+              </button>
+            </div>
+            <div class="slide-card" id="populer1">
+              <div>
+                <img src="assets/img/new-edx/1.1-populer.jpg" alt="">
+                <img src="assets/img/new-edx/1.1-ek.png" alt="">
+                <h2>Oxford Executive Leadership Programme</h2>
+                <p>Oxford Said</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/1.2-populer.jpg" alt="">
+                <img src="assets/img/new-edx/1.2-ek.png" alt="">
+                <h2>MBA Essentials</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/1.3-populer.jpg" alt="">
+                <img src="assets/img/new-edx/1.3-ek.png" alt="">
+                <h2>Higher Education Teaching Certificate</h2>
+                <p>HarvardX</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/1.4-populer.jpg">
+                <img src="assets/img/new-edx/1.4-ek.png" style="width: 150px; height: 40px;">
+                <h2>BlockChain Technologies: Business Innovation and Applicatiob</h2>
+                <p>MIT Sloan School of Managment</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="ai1">
+              <div>
+                <img src="assets/img/new-edx/2.1-ai.jpg" alt="">
+                <img src="assets/img/new-edx/2.1-ek.png" alt="">
+                <h2>Artificial Intelligence: Implications for Business Strategy</h2>
+                <p>MIT Sloan School of Management</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/2.2.jpg" alt="">
+                <img src="assets/img/new-edx/1.1-ek.png" alt="">
+                <h2>Oxford Artificial Intelligence Programme</h2>
+                <p>Oxford Said</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/2.3.jpg" alt="">
+                <img src="assets/img/new-edx/2.1-ek.png" alt="">
+                <h2>Machine Learning in Budiness</h2>
+                <p>MIT Sloan School of Management</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/2.4.jpg">
+                <img src="assets/img/new-edx/1.2-ek.png" style="width: 150px; height: 40px;">
+                <h2>Automation: Implementation in Business</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="bus1">
+              <div>
+                <img src="assets/img/new-edx/3-1.jpg" alt="">
+                <img src="assets/img/new-edx/1.2-ek.png" alt="">
+                <h2>MBA Essentials</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/3-2.jpg" alt="">
+                <img src="assets/img/new-edx/1.4-ek.png" alt="">
+                <h2>Digital Business Strategy: Harnessing Our Digital Future</h2>
+                <p>MIT Sloan School of Management</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/3-3.jpg" alt="">
+                <img src="assets/img/new-edx/1.1-ek.png" alt="">
+                <h2>Oxford Executive Strategy Programme</h2>
+                <p>Oxford Said</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/3-4.jpg">
+                <img src="assets/img/new-edx/3.4-ek.png" style="width: 150px; height: 40px;">
+                <h2>Accelerated Managment Program</h2>
+                <p>Yale SOM Executive Education</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="data1">
+              <div>
+                <img src="assets/img/new-edx/4-1.jpg" alt="">
+                <img src="assets/img/new-edx/4.1-ek.png" alt="">
+                <h2>Digital Marketing Analytic</h2>
+                <p>MIT Sloan School of Management</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/4-2.jpg">
+                <img src="assets/img/new-edx/4.2-ek.png" alt="">
+                <h2>Data Analysis for Management</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/4-3.jpg" alt="">
+                <img src="assets/img/new-edx/4.3-ek.png" alt="">
+                <h2>Machine Learning: Practical Applications</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/4-4.jpg">
+                <img src="assets/img/new-edx/4.4-ek.png" style="width: 150px; height: 40px;">
+                <h2>Data Analysis</h2>
+                <p>University of Cape Town</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="educ1">
+              <div>
+                <img src="assets/img/new-edx/5-1.jpg" alt="">
+                <img src="assets/img/new-edx/5-1-ek.jpg" alt="">
+                <h2>OHigher Education Teaching Certificate</h2>
+                <p>HarvardX</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/5-2.jpg" alt="">
+                <img src="assets/img/new-edx/5-2-ek.jpg" alt="">
+                <h2>Teaching With Technology</h2>
+                <p>University of Cape Town</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/5-3.jpg" alt="">
+                <img src="assets/img/new-edx/5-3-ek.jpg" alt="">
+                <h2>Instructional Design</h2>
+                <p>University of Cape Town</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/5-4.jpg">
+                <img src="assets/img/new-edx/5-4-ek.jpg" style="width: 150px; height: 40px;">
+                <h2>Teaching Certificate: The Science of Social and Emotional Learning</h2>
+                <p>Northwestern University</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="fina1">
+              <div>
+                <img src="assets/img/new-edx/6-1.jpg" /> <img src="assets/img/new-edx/6-1-ek.jpg">
+                <h2>Real Estate Economics and Finance Online Certificate Course</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/6-2.jpg" alt="">
+                <img src="assets/img/new-edx/6-2-ek.jpg" alt="">
+                <h2>Commercial Real Estate Analysis and Investment</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/6-3.jpg" alt="">
+                <img src="assets/img/new-edx/6-3-ek.jpg" alt="">
+                <h2>Manager Finance</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/6-4.jpg">
+                <img src="assets/img/new-edx/6-4-ek.jpg" style="width: 150px; height: 40px;">
+                <h2>BOxford Private Markets Investment Programme</h2>
+                <p>Oxford Said</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="fint1">
+              <div>
+                <img src="assets/img/new-edx/7-1.jpg" alt="">
+                <img src="assets/img/new-edx/7-1-ek.jpg" alt="">
+                <h2>Blockchain Technologies: Business Innovation and Application </h2>
+                <p>MIT Sloan School of Management</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/7-2.jpg" alt="">
+                <img src="assets/img/new-edx/7-2-ek.jpg" alt="">
+                <h2>FinTech</h2>
+                <p>HarvardX</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/7-3.jpg" alt="">
+                <img src="assets/img/new-edx/7-3-ek.jpg" alt="">
+                <h2>Fintech: Distruption in Finance</h2>
+                <p>University of Cape Town</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/7-4.jpg" alt="">
+                <img src="assets/img/new-edx/7-4-ek.jpg" alt="">
+                <h2>Blockchain and Digital Currency: The Future of Money</h2>
+                <p>University of Cape Town</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="heal1">
+              <div>
+                <img src="assets/img/new-edx/8-1.jpg" alt="">
+                <img src="assets/img/new-edx/8-1-ek.jpg" alt="">
+                <h2>Nutritution Science</h2>
+                <p>Standford(SCHE)</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/8-2.jpg" alt="">
+                <img src="assets/img/new-edx/8-2-ek.jpg" alt="">
+                <h2>Artificial Intelligence In Health Care</h2>
+                <p>MIT Sloan School of Management</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/8-3.jpg" alt="">
+                <img src="assets/img/new-edx/8-3-ek.jpg" alt="">
+                <h2>Healthcare Management</h2>
+                <p>Yale SOM Executive Education</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/8-4.jpg" alt="">
+                <img src="assets/img/new-edx/8-4-ek.jpg" alt="">
+                <h2>Health Economics and Policy</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="hr1">
+              <div>
+                <img src="assets/img/new-edx/9-1.jpg" alt="">
+                <img src="assets/img/new-edx/9-1-ek.jpg" alt="">
+                <h2>Executive and Management Coaching</h2>
+                <p>University of Cape Town</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/9-2.jpg" alt="">
+                <img src="assets/img/new-edx/9-1-ek.jpg" alt="">
+                <h2>Human Resource (HR) Management</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/9-3.jpg" alt="">
+                <img src="assets/img/new-edx/9-1-ek.jpg" alt="">
+                <h2>Training and Development Management</h2>
+                <p>HarvardX</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/9-4.jpg" alt="">
+                <img src="assets/img/new-edx/9-4-ek.jpg" alt="">
+                <h2>Digital Transformation in HR</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="infor1">
+              <div>
+                <img src="assets/img/new-edx/10-1.jpg" alt="">
+                <img src="assets/img/new-edx/10-1-ek.jpg" alt="">
+                <h2>Cybersecurity: Managing Risk in the Information Age</h2>
+                <p>HarvardX</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/10-2.jpg" alt="">
+                <img src="assets/img/new-edx/10-3-ek.jpg" alt="">
+                <h2>Cybersecurity Risk and Strategy</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>IMD</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/10-3.jpg" alt="">
+                <img src="assets/img/new-edx/10-3-ek.jpg" alt="">
+                <h2>IT Management</h2>
+                <p>University of Cape Town</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/10-4.jpg" alt="">
+                <img src="assets/img/new-edx/10-4-ek.jpg" alt="">
+                <h2>Cybersecurity Leadeship</h2>
+                <p>Northwestern University</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="lead1">
+              <div>
+                <img src="assets/img/new-edx/11-1.jpg" alt="">
+                <img src="assets/img/new-edx/11-1-ek.jpg" alt="">
+                <h2>Oxford Executive Leadeship Programme</h2>
+                <p>Oxford Said</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/11-2.jpg" alt="">
+                <img src="assets/img/new-edx/11-3-ek.jpg" alt="">
+                <h2>Leadership in an Exponentially Changing World</h2>
+                <p>MIT Sloan School of Management</p>
+                <div>
+                  <h5>IMD</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/11-3.jpg" alt="">
+                <img src="assets/img/new-edx/11-3-ek.jpg" alt="">
+                <h2>Neuroscience for Business</h2>
+                <p>MIT Sloan School of Management</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/11-4.jpg" alt="">
+                <img src="assets/img/new-edx/11-4-ek.jpg" alt="">
+                <h2>Oxford Women's Leadership Development Programme</h2>
+                <p>Oxford Said</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="mark1">
+              <div>
+                <img src="assets/img/new-edx/12-1.jpg" alt="">
+                <img src="assets/img/new-edx/12-1-ek.jpg" alt="">
+                <h2>Social Media Strategy: Creating Engagement, Insight, and Action</h2>
+                <p>MIT Sloan School of Management</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/12-2.jpg" alt="">
+                <img src="assets/img/new-edx/12-3-ek.jpg" alt="">
+                <h2>Professional Communication: Business Writing and Strorytelling</h2>
+                <p>The Economist</p>
+                <div>
+                  <h5>IMD</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/12-3.jpg" alt="">
+                <img src="assets/img/new-edx/12-3-ek.jpg" alt="">
+                <h2>Business Development Management</h2>
+                <p>University of Cape Town</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/12-4.jpg" alt="">
+                <img src="assets/img/new-edx/12-4-ek.jpg" alt="">
+                <h2>Sales Management</h2>
+                <p>University of Cape Town</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="poli1">
+              <div>
+                <img src="assets/img/new-edx/13-1.jpg" alt="">
+                <img src="assets/img/new-edx/13-1-ek.jpg" alt="">
+                <h2>Business, International Relations and the Political Economy</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/13-2.jpg" alt="">
+                <img src="assets/img/new-edx/13-1-ek.jpg" alt="">
+                <h2>Data: Law, Policy and Regulation</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>IMD</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/13-3.jpg" alt="">
+                <img src="assets/img/new-edx/12-2-ek.jpg" alt="">
+                <h2>International Relations: China, Russia, the US and the Future of Geopolitics</h2>
+                <p>The Economist</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/13-4.jpg" alt="">
+                <img src="assets/img/new-edx/13-1-ek.jpg" alt="">
+                <h2>Regulation Strategy</h2>
+                <p>LSE</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="proj1">
+              <div>
+                <img src="assets/img/new-edx/14-1.jpg" alt="">
+                <img src="assets/img/new-edx/14-1-ek.jpg" alt="">
+                <h2>Oxford Leading Strategis Projects Programme</h2>
+                <p>Oxford Said</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/14-2.jpg" alt="">
+                <img src="assets/img/new-edx/14-2-ek.jpg" alt="">
+                <h2>Project Management Foundations</h2>
+                <p>University of Cape Town</p>
+                <div>
+                  <h5>IMD</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/14-3.jpg" alt="">
+                <img src="assets/img/new-edx/14-3-ek.jpg" alt="">
+                <h2>Digital Transformation in Operation</h2>
+                <p>Northwestern University</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/14-4.jpg" alt="">
+                <img src="assets/img/new-edx/14-4-ek.jpg" alt="">
+                <h2>Advanced Project Management</h2>
+                <p>University of Cape Town</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card" id="sust1">
+              <div>
+                <img src="assets/img/new-edx/15-1.jpg" alt="">
+                <img src="assets/img/new-edx/15-1-ek.jpg" alt="">
+                <h2>Business Sustainability Management</h2>
+                <p>CISL</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/15-2.jpg" alt="">
+                <img src="assets/img/new-edx/15-1-ek.jpg" alt="">
+                <h2>Sustainability Finance</h2>
+                <p>CISL</p>
+                <div>
+                  <h5>IMD</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/15-3.jpg" alt="">
+                <img src="assets/img/new-edx/15-3-ek.jpg" alt="">
+                <h2>Oxford Leading Sustainable Corporations Programme</h2>
+                <p>Oxford Said</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+              <div>
+                <img src="assets/img/new-edx/15-4.jpg" alt="">
+                <img src="assets/img/new-edx/15-4-ek.jpg" alt="">
+                <h2>Corporate Sustainability Management: Risk, Profit and Purpose</h2>
+                <p>Yale SOM Executive Education</p>
+                <div>
+                  <h5>Executive Educatiob</h5>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="c_w_master" id="master"></div>
+          <div class="c_w_bachelor" id="bachelor">
+          </div>
+          <a href="Explore"></a>
         </div>
-
       </div>
-
-
-
-
-
-
       <div class="course_m"></div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <div class="subject-cars"></div>
@@ -365,41 +944,6 @@
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="footer"></div>
 
 
@@ -407,12 +951,8 @@
 
 
 
-
-
-
-
-<script>
-//Header Script
+  <script>
+    //Header Script
 function over() {
   out2();
   document.getElementById("myDIV").style.display = "block";
@@ -441,7 +981,7 @@ function search() {
   });
 
   wsearchbar.addEventListener("focusout", (event) => {
-    wsearchbar.style.width="200px";
+    wsearchbar.style.width="270px";
     wsearchbar.style.marginLeft="580px";
     wsb.style.display = "block";
     wsb2.style.display = "none";
@@ -562,7 +1102,7 @@ function search() {
   }
 
 
-  const slider = document.querySelector('.items');
+const slider = document.querySelector('.items');
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -590,9 +1130,95 @@ slider.addEventListener('mousemove', (e) => {
   console.log(walk);
 });
 
+//new on edx
+  function executive() {
+    var exeBtn = document.getElementById("executive");
+    var masBtn = document.getElementById("master");
+    var bacBtn = document.getElementById("bachelor");
+
+    exeBtn.style.display = "block";
+    masBtn.style.display = "none";
+    bacBtn.style.display = "none";
+  }
+
+  function master() {
+    var exeBtn = document.getElementById("executive");
+    var masBtn = document.getElementById("master");
+    var bacBtn = document.getElementById("bachelor");
+
+    exeBtn.style.display = "none";
+    masBtn.style.display = "block";
+    bacBtn.style.display = "none";
+  }
+
+  function bachelor() {
+    var exeBtn = document.getElementById("executive");
+    var masBtn = document.getElementById("master");
+    var bacBtn = document.getElementById("bachelor");
+
+    exeBtn.style.display = "none";
+    masBtn.style.display = "none";
+    bacBtn.style.display = "block";
+  }
+
+  var slideIndex1 = 1;
+  function sliderbtn(n) {
+    showDivs1(slideIndex1 += n);
+  }
+  function showDivs1(n){
+    var i;
+    var x = document.getElementsByClassName("index-slide");
+
+    var l = document.getElementById("left-btn");
+    var r = document.getElementById("right-btn");
+
+    if (slideIndex1 ==2 ) {
+      l.style.visibility = "visible";
+    }
+
+    if (slideIndex1 ==1 ) {
+      l.style.visibility = "hidden";
+    }
+
+    if (slideIndex1 == 9) {
+      r.style.visibility = "hidden"
+    }
+    if (slideIndex1 < 9) {
+      r.style.visibility = "visible"
+    }
+
+    for (i = 0; i < x.length-7; i=i+6) {
+      x[i].style.display = "none";  
+      x[i+1].style.display = "none"; 
+      x[i+2].style.display = "none";
+      x[i+3].style.display = "none";
+      x[i+4].style.display = "none";
+      x[i+5].style.display = "none";
+      x[i+6].style.display = "none";
+    }
+    x[slideIndex1-1].style.display = "flex";  
+    x[slideIndex1].style.display = "flex"; 
+    x[slideIndex1+1].style.display = "flex"; 
+    x[slideIndex1+2].style.display = "flex"; 
+    x[slideIndex1+3].style.display = "flex"; 
+    x[slideIndex1+4].style.display = "flex"; 
+    x[slideIndex1+5].style.display = "flex"; 
+  }
 
 
-</script>
+
+  function populer_show(a) {
+    var slide = document.getElementsByClassName("slide-card");
+    var x = document.getElementById(a); 
+    for(var i=0; i< slide.length; i++){
+      slide[i].style.display = "none";
+    }
+    x.style.display = "flex";
+  }
+  </script>
+
+
+
 
 
 </body>
