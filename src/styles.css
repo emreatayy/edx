@@ -1058,6 +1058,8 @@ body{
       border-radius: 3px;
       height: 400px;
       margin-left: 5px;
+      box-sizing: border-box;
+      word-wrap: break-word!important;
     }
 
     .exeI img:nth-child(1){
@@ -1074,7 +1076,10 @@ body{
       margin-top: -30px;
       margin-left: 30px;
       height: 40px;
+      color: white;
+      fill: white;
     }
+
 
     .exeEdu>h1{
       margin-left: 20px;
@@ -1102,5 +1107,11 @@ body{
       text-align: center;
       margin-top: 130px;
     }
+    .emre{
+      display: none;
+    }
 
+    #showMbl-1{
+      display: block;
+    }
   }
