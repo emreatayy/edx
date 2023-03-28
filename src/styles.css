@@ -552,6 +552,15 @@ body{
   color: black;
  }
 
+ .c_w_bachelor .slide-card div{
+  background-color: #00262b;
+  color: white;
+ }
+ .c_w_bachelor .slide-card div h5{
+  background-color: white;
+  color: black;
+ }
+
  .index-btn2>button{
   margin-right: 30px;
  }
@@ -645,6 +654,10 @@ body{
 }
 #populer1{
   display: flex;
+}
+
+.course_m{
+  display: none;
 }
 
 /* -------------------------------------------
@@ -995,4 +1008,97 @@ body{
     .new-on-edx{
       width: 100%;
     }
+
+    .course_w{
+      display: none;
+    }
+
+    .course_m{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .course_m>div{
+      height: 550px;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+
+    .exe-items {
+      position: relative;
+      width: 2480px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      white-space: nowrap;
+      transition: all 0.2s;
+      transform: scale(0.98);
+      will-change: transform;
+      user-select: none;
+      cursor: pointer;
+      height: 30px;
+    }
+    .exe-items1 {
+      position: relative;
+      width: 1210px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      white-space: nowrap;
+      transition: all 0.2s;
+      transform: scale(0.98);
+      will-change: transform;
+      user-select: none;
+      cursor: pointer;
+      height: 310px;
+    }
+
+    .exeI{
+      width: 300px;
+      box-shadow: 2px 2px 3px 3px #9c9c9c;
+      border-radius: 3px;
+      height: 300px;
+    }
+
+    .exeI img:nth-child(1){
+      width: 300px;
+      margin-top: -10px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+
+    .exeI>img:nth-child(2){
+      display: block;
+      width: 100px;
+      margin-top: -30px;
+      margin-left: 30px;
+      height: 40px;
+    }
+
+    .exeEdu>h1{
+      margin-left: 20px;
+      font-size: 2.5rem;
+    }
+
+    .exeI h2{
+      font-size: 1.3rem;
+      margin-left: 20px;
+      word-wrap: break-word;
+    }
+
+    .exeI p{
+      font-size: 0.8rem;
+      margin-left: 20px;
+      word-wrap: break-word;
+    }
+
+    .exeI div{
+      font-size: 0.8rem;
+      margin-left: 20px;
+      word-wrap: break-word;
+      background-color: #bebebe;
+      width: 110px;
+      text-align: center;
+    }
+
   }

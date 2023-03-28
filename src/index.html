@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Net</title>
@@ -7,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <div class="header">
     <!-- Windows Logo -->
@@ -18,8 +20,7 @@
 
     <!-- Prime Menu Bar -->
     <div class="menu">
-      <div class="courser" id="myDIV" onmouseout="out()"
-      onmouseover="over()">
+      <div class="courser" id="myDIV" onmouseout="out()" onmouseover="over()">
         <div>
           <p>Coursers By Subject</p>
           <button>View All Courses</button>
@@ -68,8 +69,7 @@
         <a href="">All Subjects >></a>
       </div>
 
-      <div class="courser" id="myDIV2" onmouseout="out2()"
-      onmouseover="over2()">
+      <div class="courser" id="myDIV2" onmouseout="out2()" onmouseover="over2()">
         <div>
           <p>Pathways for your advancement</p>
           <button>Compare Programs</button>
@@ -81,7 +81,7 @@
 
             <li>Professional Certificates</li>
             <li>From employers or universitiesfrom top universitie</li>
-            
+
             <li>Master's Degrees</li>
             <li>Online degree programs from top universitis</li>
 
@@ -104,13 +104,19 @@
       <div class="w-menu">
         <nav>
           <ul>
-            <li class="hvr-li" onmouseover="over()" >
+            <li class="hvr-li" onmouseover="over()">
               Courser
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" fill="currentColor"></path></svg> 
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                focusable="false" aria-hidden="true">
+                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" fill="currentColor"></path>
+              </svg>
             </li>
             <li class="hvr-li" onmouseover="over2()">
               Program & Degrees
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" fill="currentColor"></path></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                focusable="false" aria-hidden="true">
+                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" fill="currentColor"></path>
+              </svg>
             </li>
             <li class="hvr-li">
               School & Partner
@@ -122,10 +128,18 @@
       <!-- Mobile Menu -->
       <div class="m-menu">
         <button onclick="mdrop()" id="mdrop">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
         </button>
         <button onclick="mdropx()" id="mdropx">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+            </path>
+          </svg>
         </button>
       </div>
     </div>
@@ -138,10 +152,16 @@
           </div>
         </li>
         <li>All Courses & Program</li>
-        <li class="drop-li" id="drop-li" >
-          Degrees & Program         
-          <svg onclick="dropli()" id="down" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" fill="currentColor"></path></svg>
-          <svg onclick="upli()" id="up" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z" fill="currentColor"></path></svg>
+        <li class="drop-li" id="drop-li">
+          Degrees & Program
+          <svg onclick="dropli()" id="down" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true">
+            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" fill="currentColor"></path>
+          </svg>
+          <svg onclick="upli()" id="up" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true">
+            <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z" fill="currentColor"></path>
+          </svg>
           <ul id="dropul">
             <li>Executive Education</li>
             <li>Professional Certificates</li>
@@ -161,10 +181,22 @@
     <div class="m-search-bar">
       <div>
         <button onclick="msb()">
-          <svg id="msb" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>        
-        </button>     
+          <svg id="msb" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+            aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+            </path>
+          </svg>
+        </button>
         <button onclick="msx()">
-          <svg id="msx" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+          <svg id="msx" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+            aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+            </path>
+          </svg>
         </button>
       </div>
     </div>
@@ -173,7 +205,12 @@
     <div class="m-search-input" id="msi">
       <div>
         <input type="text" placeholder="Search online courses">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+          </path>
+        </svg>
       </div>
     </div>
 
@@ -184,10 +221,15 @@
     <div class="w-search-bar" id="wsbar" onclick="search()">
       <input type="text" id="txt11" placeholder="Emre">
       <label for="txt1"></label>
-      
+
       <button id="wsb">
         <span>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"></path></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+            focusable="false" aria-hidden="true">
+            <path
+              d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              fill="currentColor"></path>
+          </svg>
         </span>
       </button>
       <button id="wsb2">Search</button>
@@ -204,7 +246,7 @@
       <a href="">Register for free</a>
     </div>
   </div>
- <div class="main-content"> 
+  <div class="main-content">
     <div class="hero-container">
       <div class="skew"></div>
       <div class="hero-container-main">
@@ -227,35 +269,41 @@
       <div class="carousel">
         <div class="carousel-left" id="carousel-left">
           <button onclick="plusDivs(-1)">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"></path></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+              focusable="false" aria-hidden="true">
+              <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"></path>
+            </svg>
           </button>
         </div>
         <div class="slider">
           <ul>
-            <li class="mySlides"><img  src="assets/img/university/1mit.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/2harvard.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/3berkeley.png" alt=""></li> 
-            <li class="mySlides"><img  src="assets/img/university/4tuxs.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/5boston.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/6usom.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/7anu.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/8cu.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/9tudelft.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/10gtown.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/11rtwth.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/12sorbonne.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/13hongkong.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/14adelaide.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/15tuobc.png" alt=""></li>
-            <li class="mySlides"><img  src="assets/img/university/16tuoq.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/1mit.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/2harvard.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/3berkeley.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/4tuxs.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/5boston.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/6usom.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/7anu.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/8cu.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/9tudelft.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/10gtown.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/11rtwth.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/12sorbonne.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/13hongkong.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/14adelaide.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/15tuobc.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/16tuoq.png" alt=""></li>
           </ul>
         </div>
         <div class="carousel-right" id="carousel-right">
           <button onclick="plusDivs(1)">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" fill="currentColor"></path></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+              focusable="false" aria-hidden="true">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" fill="currentColor"></path>
+            </svg>
           </button>
         </div>
-      </div>  
+      </div>
       <div class="grid-container">
         <main class="grid-item main">
           <div class="items">
@@ -319,21 +367,23 @@
       <h2>New on edX</h2>
       <div class="course_w">
         <div class="c_w_containe">
-          <button onclick="executive()" >Executive Education</button>
-          <button onclick="master()" >Master's Degrees</button>
-          <button onclick="bachelor()" >Bachelor's Degrees</button>
+          <button onclick="executive()">Executive Education</button>
+          <button onclick="master()">Master's Degrees</button>
+          <button onclick="bachelor()">Bachelor's Degrees</button>
           <hr>
         </div>
         <div class="c_w_contant">
           <div class="c_w_executive" id="executive">
             <div class="Sliderman">
               <button class="left-btn" id="left-btn" onclick="sliderbtn(-1)">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"></path></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" focusable="false" aria-hidden="true">
+                  <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"></path>
+                </svg>
               </button>
               <div class="index-btn">
-                <button class="index-slide"        
-                onclick="populer_show('populer1')">Popular</button>  
-                <button class="index-slide" onclick="populer_show('ai1')">AI & Transformayion</button> 
+                <button class="index-slide" onclick="populer_show('populer1')">Popular</button>
+                <button class="index-slide" onclick="populer_show('ai1')">AI & Transformayion</button>
                 <button class="index-slide" onclick="populer_show('bus1')">Business Managment & Strategy</button>
                 <button class="index-slide" onclick="populer_show('data1')">Data Science & Analysis</button>
                 <button class="index-slide" onclick="populer_show('educ1')">Education</button>
@@ -347,10 +397,13 @@
                 <button class="index-slide" onclick="populer_show('poli1')">Politics, Economics & Law</button>
                 <button class="index-slide" onclick="populer_show('proj1')">Project Managment</button>
                 <button class="index-slide" onclick="populer_show('sust1')">Sustainability</button>
-                
+
               </div>
               <button class="right-btn" id="right-btn" onclick="sliderbtn(1)">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" fill="currentColor"></path></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" focusable="false" aria-hidden="true">
+                  <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" fill="currentColor"></path>
+                </svg>
               </button>
             </div>
             <div class="slide-card" id="populer1">
@@ -926,11 +979,14 @@
           <div class="c_w_master" id="master">
             <div class="Sliderman">
               <button class="left-btn" id="left-btn1" onclick="sliderbtn2(-1)">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"></path></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" focusable="false" aria-hidden="true">
+                  <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"></path>
+                </svg>
               </button>
               <div class="index-btn1">
-                <button class="index-slide1"onclick="populer_show('pplr')">Popular</button>  
-                <button class="index-slide1" onclick="populer_show('mba')">MBA</button> 
+                <button class="index-slide1" onclick="populer_show('pplr')">Popular</button>
+                <button class="index-slide1" onclick="populer_show('mba')">MBA</button>
                 <button class="index-slide1" onclick="populer_show('dSci')">Data Science</button>
                 <button class="index-slide1" onclick="populer_show('compS')">Computer Science</button>
                 <button class="index-slide1" onclick="populer_show('eng')">Engineering</button>
@@ -942,10 +998,13 @@
                 <button class="index-slide1" onclick="populer_show('Coun')">Counselling</button>
                 <button class="index-slide1" onclick="populer_show('Heal')">Healthcare</button>
                 <button class="index-slide1" onclick="populer_show('lw')">Law</button>
-                <button class="index-slide1" onclick="populer_show('educ')">Education</button>         
+                <button class="index-slide1" onclick="populer_show('educ')">Education</button>
               </div>
               <button class="right-btn" id="right-btn1" onclick="sliderbtn2(1)">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" fill="currentColor"></path></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" focusable="false" aria-hidden="true">
+                  <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" fill="currentColor"></path>
+                </svg>
               </button>
             </div>
 
@@ -1380,15 +1439,15 @@
                   <h5>Executive Educatiob</h5>
                 </div>
               </div>
-            </div>           
-          </div> 
+            </div>
+          </div>
 
           <div class="c_w_bachelor" id="bachelor">
             <div class="Sliderman">
               <div class="index-btn2">
-                <button class="index-slide1"onclick="populer_show('pplr2')">Popular</button>  
-                <button class="index-slide1" onclick="populer_show('buss')">Business</button> 
-                <button class="index-slide1" onclick="populer_show('cds')">Computer & Data Sciences</button>       
+                <button class="index-slide1" onclick="populer_show('pplr2')">Popular</button>
+                <button class="index-slide1" onclick="populer_show('buss')">Business</button>
+                <button class="index-slide1" onclick="populer_show('cds')">Computer & Data Sciences</button>
               </div>
             </div>
             <div class="slide-card" id="pplr2">
@@ -1477,7 +1536,7 @@
                   <h5>Executive Educatiob</h5>
                 </div>
               </div>
-            </div>   
+            </div>
           </div>
 
 
@@ -1488,15 +1547,115 @@
           <a href="Explore"></a>
         </div>
       </div>
-      <div class="course_m"></div>
+      <div class="course_m">
+        <div class="exeEdu">
+          <h1>Executive Education</h1>
+          <div class="exe-trust">
+            <main class="main">
+              <div class="exe-items">
+                <div class="item item1">
+                  <button>Popular</button>
+                </div>
+                <div class="item item2">
+                  <button>AI & Digital Transformation</button>
+                </div>
+                <div class="item item3">
+                  <button>Business Management & Strategy</button>
+                </div>
+                <div class="item item4">
+                  <button>Data Science & Analysis</button>
+                </div>
+                <div class="item item5">
+                  <button>Education</button>
+                </div>
+                <div class="item item6">
+                  <button>Finance, Investment & Real Estate</button>
+                </div>
+                <div class="item item7">
+                  <button>Fintexh & Blockchain</button>
+                </div>
+                <div class="item item8">
+                  <button>Healthcare & Wellbeing</button>
+                </div>
+                <div class="item item9">
+                  <button>HR &Talent Management</button>
+                </div>
+                <div class="item item10">
+                  <button>Information Technology & Cybersecurity</button>
+                </div>
+                <div class="item item11">
+                  <button>Leadership & Interpersonel Skills</button>
+                </div>
+                <div class="item item12">
+                  <button>Marketing, Sales & Design</button>
+                </div>
+                <div class="item item13">
+                  <button>Project Management, Operation, & Supply Chain</button>
+                </div>
+                <div class="item item14">
+                  <button>Sustainability</button>
+                </div>
+              </div>
+            </main>
+            <div class="trust_text">
+              <a href="">Learn from more than 160 member universites</a>
+            </div>
+          </div>
+          <div class="exe-trust">
+            <main class="main">
+              <div class="exe-items1">
+                <div class="item exeI">
+                  <img src="assets/img/new-edx/1.1-populer.jpg" alt="">
+                  <img src="assets/img/new-edx/1.1-ek.png">
+                  <h2>Oxford Executive <br> Leadership Programme</h2>
+                  <p>Oxford Said</p>
+                  <div>
+                    <h5>Executive Educatiob</h5>
+                  </div>
+                </div>
+                <div class="item exeI">
+                  <img src="assets/img/new-edx/1.1-populer.jpg" alt="">
+                  <img src="assets/img/new-edx/1.1-ek.png" alt="">
+                  <h2>Oxford Executive <br> Leadership Programme</h2>
+                  <p>Oxford Said</p>
+                  <div>
+                    <h5>Executive Educatiob</h5>
+                  </div>
+                </div>
+                <div class="item exeI">
+                  <img src="assets/img/new-edx/1.1-populer.jpg" alt="">
+                  <img src="assets/img/new-edx/1.1-ek.png" alt="">
+                  <h2>Oxford Executive <br> Leadership Programme</h2>
+                  <p>Oxford Said</p>
+                  <div>
+                    <h5>Executive Educatiob</h5>
+                  </div>
+                </div>
+                <div class="item exeI">
+                  <img src="assets/img/new-edx/1.1-populer.jpg" alt="">
+                  <img src="assets/img/new-edx/1.1-ek.png" alt="">
+                  <h2>Oxford Executive <br> Leadership Programme</h2>
+                  <p>Oxford Said</p>
+                  <div>
+                    <h5>Executive Educatiob</h5>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+      <div></div>
+      <div></div>
     </div>
+  </div>
 
 
-    <div class="subject-cars"></div>
-    <div class="audiences"></div>
-    <div class="universal-design"></div>
-    <div class="edx-vision"></div>
-    <div class="subjec"></div>
+  <div class="subject-cars"></div>
+  <div class="audiences"></div>
+  <div class="universal-design"></div>
+  <div class="edx-vision"></div>
+  <div class="subjec"></div>
   </div>
 
 
@@ -1509,372 +1668,372 @@
 
   <script>
     //Header Script
-function over() {
-  out2();
-  document.getElementById("myDIV").style.display = "block";
-}
-function out() {
-  document.getElementById("myDIV").style.display = "none";
-}
-
-function over2() {
-  out();
-  document.getElementById("myDIV2").style.display = "block";
-}
-function out2() {
-  document.getElementById("myDIV2").style.display = "none";
-}
-function search() {
-  var wsearchbar = document.getElementById("wsbar");
-  var wsb = document.getElementById("wsb");
-  var wsb2 = document.getElementById("wsb2");
-
-  wsearchbar.addEventListener("focusin", (event) => {
-    wsearchbar.style.width="600px";
-    wsearchbar.style.marginLeft="120px";
-    wsb.style.display = "none";
-    wsb2.style.display = "block";
-  });
-
-  wsearchbar.addEventListener("focusout", (event) => {
-    wsearchbar.style.width="270px";
-    wsearchbar.style.marginLeft="580px";
-    wsb.style.display = "block";
-    wsb2.style.display = "none";
-  });
-}
-
-  function msb() {
-    var msi = document.getElementById("msi");
-    var msx = document.getElementById("msx");
-    var msb = document.getElementById("msb");
-    var lgrad = document.getElementById("lgrad");
-    msi.style.display = "block";
-    lgrad.style.display = "block";
-    msb.style.display = "none";
-    msx.style.display = "block";
-  }
-
-  function msx() {
-    var msi = document.getElementById("msi");
-    var msx = document.getElementById("msx");
-    var msb = document.getElementById("msb");
-    var lgrad = document.getElementById("lgrad");
-    msi.style.display = "none";
-    lgrad.style.display = "none";
-    msb.style.display = "block";
-    msx.style.display = "none";
-  }
-
-  function mdrop() {
-    var loginmobile = document.getElementById("loginmobile");
-    var lgrad2 = document.getElementById("lgrad2");
-    var mdrop = document.getElementById("mdrop");
-    var mdropx = document.getElementById("mdropx");
-
-    loginmobile.style.display = "block";
-    lgrad2.style.display = "block";
-    mdrop.style.display = "none";
-    mdropx.style.display = "block";
-  }
-  function mdropx() {
-    var mdrop = document.getElementById("mdrop");
-    var mdropx = document.getElementById("mdropx");
-    var loginmobile = document.getElementById("loginmobile");
-    var lgrad2 = document.getElementById("lgrad2");
-
-    mdrop.style.display = "block";
-    mdropx.style.display = "none";
-    loginmobile.style.display = "none";
-    lgrad2.style.display = "none";
-  }
-
-  function dropli() {
-    var loginmobile = document.getElementById("loginmobile");
-    var dropul = document.getElementById("dropul");
-    var down = document.getElementById("down");
-    var up = document.getElementById("up");
-
-    loginmobile.style.height = "505px";
-    dropul.style.display = "block";
-    down.style.display = "none";
-    up.style.display = "block";
-  }
-
-  function upli() {
-    var loginmobile = document.getElementById("loginmobile");
-    var dropul = document.getElementById("dropul");
-    var down = document.getElementById("down");
-    var up = document.getElementById("up");
-
-    loginmobile.style.height = "250px";
-    dropul.style.display = "none";
-    down.style.display = "block";
-    up.style.display = "none";
-  }
-
-
-
-
-  var slideIndex = 1;
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-  function showDivs(n){
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var l = document.getElementById("carousel-left");
-    var r = document.getElementById("carousel-right");
-
-    if (slideIndex ==2 ) {
-      l.style.visibility = "visible";
+    function over() {
+      out2();
+      document.getElementById("myDIV").style.display = "block";
+    }
+    function out() {
+      document.getElementById("myDIV").style.display = "none";
     }
 
-    if (slideIndex ==1 ) {
-      l.style.visibility = "hidden";
+    function over2() {
+      out();
+      document.getElementById("myDIV2").style.display = "block";
+    }
+    function out2() {
+      document.getElementById("myDIV2").style.display = "none";
+    }
+    function search() {
+      var wsearchbar = document.getElementById("wsbar");
+      var wsb = document.getElementById("wsb");
+      var wsb2 = document.getElementById("wsb2");
+
+      wsearchbar.addEventListener("focusin", (event) => {
+        wsearchbar.style.width = "600px";
+        wsearchbar.style.marginLeft = "120px";
+        wsb.style.display = "none";
+        wsb2.style.display = "block";
+      });
+
+      wsearchbar.addEventListener("focusout", (event) => {
+        wsearchbar.style.width = "270px";
+        wsearchbar.style.marginLeft = "580px";
+        wsb.style.display = "block";
+        wsb2.style.display = "none";
+      });
     }
 
-    if (slideIndex == 11) {
-      r.style.visibility = "hidden"
-    }
-    if (slideIndex < 11) {
-      r.style.visibility = "visible"
-    }
-
-    for (i = 0; i < x.length-5; i=i+5) {
-      x[i].style.display = "none";  
-      x[i+1].style.display = "none"; 
-      x[i+2].style.display = "none";
-      x[i+3].style.display = "none";
-      x[i+4].style.display = "none";
-      x[i+5].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";  
-    x[slideIndex].style.display = "block"; 
-    x[slideIndex+1].style.display = "block"; 
-    x[slideIndex+2].style.display = "block"; 
-    x[slideIndex+3].style.display = "block"; 
-    x[slideIndex+4].style.display = "block"; 
-  }
-
-
-const slider = document.querySelector('.items');
-let isDown = false;
-let startX;
-let scrollLeft;
-
-slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener('mouseleave', () => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', () => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mousemove', (e) => {
-  if(!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 3; //scroll-fast
-  slider.scrollLeft = scrollLeft - walk;
-  console.log(walk);
-});
-
-//new on edx
-  function executive() {
-    var exeBtn = document.getElementById("executive");
-    var masBtn = document.getElementById("master");
-    var bacBtn = document.getElementById("bachelor");
-    var slide = document.getElementsByClassName("slide-card");
-    var x = document.getElementById("populer1");
-    for (let index = 0; index < slide.length; index++) {
-      slide[index].style.display = "none";
+    function msb() {
+      var msi = document.getElementById("msi");
+      var msx = document.getElementById("msx");
+      var msb = document.getElementById("msb");
+      var lgrad = document.getElementById("lgrad");
+      msi.style.display = "block";
+      lgrad.style.display = "block";
+      msb.style.display = "none";
+      msx.style.display = "block";
     }
 
-    x.style.display = "flex";
-    exeBtn.style.display = "block";
-    masBtn.style.display = "none";
-    bacBtn.style.display = "none";
-  }
-
-  function master() {
-    var exeBtn = document.getElementById("executive");
-    var masBtn = document.getElementById("master");
-    var bacBtn = document.getElementById("bachelor");
-    var slide = document.getElementsByClassName("slide-card");
-    var x = document.getElementById("pplr");
-    for (let index = 0; index < slide.length; index++) {
-      slide[index].style.display = "none";
-    }
-    x.style.display = "flex";
-
-    exeBtn.style.display = "none";
-    masBtn.style.display = "block";
-    bacBtn.style.display = "none";
-  }
-
-  function bachelor() {
-    var exeBtn = document.getElementById("executive");
-    var masBtn = document.getElementById("master");
-    var bacBtn = document.getElementById("bachelor");
-    var slide = document.getElementsByClassName("slide-card");
-    var x = document.getElementById("pplr2");
-    for (let index = 0; index < slide.length; index++) {
-      slide[index].style.display = "none";
+    function msx() {
+      var msi = document.getElementById("msi");
+      var msx = document.getElementById("msx");
+      var msb = document.getElementById("msb");
+      var lgrad = document.getElementById("lgrad");
+      msi.style.display = "none";
+      lgrad.style.display = "none";
+      msb.style.display = "block";
+      msx.style.display = "none";
     }
 
-    x.style.display = "flex";
+    function mdrop() {
+      var loginmobile = document.getElementById("loginmobile");
+      var lgrad2 = document.getElementById("lgrad2");
+      var mdrop = document.getElementById("mdrop");
+      var mdropx = document.getElementById("mdropx");
 
-    exeBtn.style.display = "none";
-    masBtn.style.display = "none";
-    bacBtn.style.display = "block";
-  }
+      loginmobile.style.display = "block";
+      lgrad2.style.display = "block";
+      mdrop.style.display = "none";
+      mdropx.style.display = "block";
+    }
+    function mdropx() {
+      var mdrop = document.getElementById("mdrop");
+      var mdropx = document.getElementById("mdropx");
+      var loginmobile = document.getElementById("loginmobile");
+      var lgrad2 = document.getElementById("lgrad2");
 
-  var slideIndex1 = 1;
-  function sliderbtn(n) {
-    showDivs1(slideIndex1 += n);
-  }
-  function showDivs1(n){
-    var i;
-    var x = document.getElementsByClassName("index-slide");
-
-    var l = document.getElementById("left-btn");
-    var r = document.getElementById("right-btn");
-
-    if (slideIndex1 ==2 ) {
-      l.style.visibility = "visible";
+      mdrop.style.display = "block";
+      mdropx.style.display = "none";
+      loginmobile.style.display = "none";
+      lgrad2.style.display = "none";
     }
 
-    if (slideIndex1 ==1 ) {
-      l.style.visibility = "hidden";
+    function dropli() {
+      var loginmobile = document.getElementById("loginmobile");
+      var dropul = document.getElementById("dropul");
+      var down = document.getElementById("down");
+      var up = document.getElementById("up");
+
+      loginmobile.style.height = "505px";
+      dropul.style.display = "block";
+      down.style.display = "none";
+      up.style.display = "block";
     }
 
-    if (slideIndex1 == 9) {
-      r.style.visibility = "hidden"
-    }
-    if (slideIndex1 < 9) {
-      r.style.visibility = "visible"
-    }
+    function upli() {
+      var loginmobile = document.getElementById("loginmobile");
+      var dropul = document.getElementById("dropul");
+      var down = document.getElementById("down");
+      var up = document.getElementById("up");
 
-    for (i = 0; i < x.length-7; i=i+6) {
-      x[i].style.display = "none";  
-      x[i+1].style.display = "none"; 
-      x[i+2].style.display = "none";
-      x[i+3].style.display = "none";
-      x[i+4].style.display = "none";
-      x[i+5].style.display = "none";
-      x[i+6].style.display = "none";
+      loginmobile.style.height = "250px";
+      dropul.style.display = "none";
+      down.style.display = "block";
+      up.style.display = "none";
     }
-    x[slideIndex1-1].style.display = "flex";  
-    x[slideIndex1].style.display = "flex"; 
-    x[slideIndex1+1].style.display = "flex"; 
-    x[slideIndex1+2].style.display = "flex"; 
-    x[slideIndex1+3].style.display = "flex"; 
-    x[slideIndex1+4].style.display = "flex"; 
-    x[slideIndex1+5].style.display = "flex"; 
-  }
-
-  var slideIndex2 = 1;
-  function sliderbtn2(n) {
-    showDivs2(slideIndex2 += n);
-  }
-  function showDivs2(n){
-    var i;
-    var x = document.getElementsByClassName("index-slide1");
-    var l = document.getElementById("left-btn1");
-    var r = document.getElementById("right-btn1");
-
-    if (slideIndex2 ==2 ) {
-      l.style.visibility = "visible";
-    }
-
-    if (slideIndex2 ==1 ) {
-      l.style.visibility = "hidden";
-    }
-
-    if (slideIndex2 == 9) {
-      r.style.visibility = "hidden"
-    }
-    if (slideIndex2 < 9) {
-      r.style.visibility = "visible"
-    }
-
-    for (i = 0; i < x.length-7; i=i+6) {
-      x[i].style.display = "none";  
-      x[i+1].style.display = "none"; 
-      x[i+2].style.display = "none";
-      x[i+3].style.display = "none";
-      x[i+4].style.display = "none";
-      x[i+5].style.display = "none";
-      x[i+6].style.display = "none";
-    }
-    x[slideIndex2-1].style.display = "flex";  
-    x[slideIndex2].style.display = "flex"; 
-    x[slideIndex2+1].style.display = "flex"; 
-    x[slideIndex2+2].style.display = "flex"; 
-    x[slideIndex2+3].style.display = "flex"; 
-    x[slideIndex2+4].style.display = "flex"; 
-    x[slideIndex2+5].style.display = "flex"; 
-  }
-  var slideIndex3 = 1;
-  function sliderbtn3(n) {
-    showDivs2(slideIndex3 += n);
-  }
-  function showDivs3(n){
-    var i;
-    var x = document.getElementsByClassName("index-slide2");
-    var l = document.getElementById("left-btn2");
-    var r = document.getElementById("right-btn2");
-
-    if (slideIndex3 ==2 ) {
-      l.style.visibility = "visible";
-    }
-
-    if (slideIndex3 ==1 ) {
-      l.style.visibility = "hidden";
-    }
-
-    if (slideIndex3 == 9) {
-      r.style.visibility = "hidden"
-    }
-    if (slideIndex3 < 9) {
-      r.style.visibility = "visible"
-    }
-
-    for (i = 0; i < x.length-7; i=i+6) {
-      x[i].style.display = "none";  
-      x[i+1].style.display = "none"; 
-      x[i+2].style.display = "none";
-      x[i+3].style.display = "none";
-      x[i+4].style.display = "none";
-      x[i+5].style.display = "none";
-      x[i+6].style.display = "none";
-    }
-    x[slideIndex3-1].style.display = "flex";  
-    x[slideIndex3].style.display = "flex"; 
-    x[slideIndex3+1].style.display = "flex"; 
-    x[slideIndex3+2].style.display = "flex"; 
-    x[slideIndex3+3].style.display = "flex"; 
-    x[slideIndex3+4].style.display = "flex"; 
-    x[slideIndex3+5].style.display = "flex"; 
-  }
 
 
 
-  function populer_show(a) {
-    var slide = document.getElementsByClassName("slide-card");
-    var x = document.getElementById(a); 
-    for(var i=0; i< slide.length; i++){
-      slide[i].style.display = "none";
+
+    var slideIndex = 1;
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
     }
-    x.style.display = "flex";
-  }
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var l = document.getElementById("carousel-left");
+      var r = document.getElementById("carousel-right");
+
+      if (slideIndex == 2) {
+        l.style.visibility = "visible";
+      }
+
+      if (slideIndex == 1) {
+        l.style.visibility = "hidden";
+      }
+
+      if (slideIndex == 11) {
+        r.style.visibility = "hidden"
+      }
+      if (slideIndex < 11) {
+        r.style.visibility = "visible"
+      }
+
+      for (i = 0; i < x.length - 5; i = i + 5) {
+        x[i].style.display = "none";
+        x[i + 1].style.display = "none";
+        x[i + 2].style.display = "none";
+        x[i + 3].style.display = "none";
+        x[i + 4].style.display = "none";
+        x[i + 5].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+      x[slideIndex].style.display = "block";
+      x[slideIndex + 1].style.display = "block";
+      x[slideIndex + 2].style.display = "block";
+      x[slideIndex + 3].style.display = "block";
+      x[slideIndex + 4].style.display = "block";
+    }
+
+
+    const slider = document.querySelector('.items');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 3; //scroll-fast
+      slider.scrollLeft = scrollLeft - walk;
+      console.log(walk);
+    });
+
+    //new on edx
+    function executive() {
+      var exeBtn = document.getElementById("executive");
+      var masBtn = document.getElementById("master");
+      var bacBtn = document.getElementById("bachelor");
+      var slide = document.getElementsByClassName("slide-card");
+      var x = document.getElementById("populer1");
+      for (let index = 0; index < slide.length; index++) {
+        slide[index].style.display = "none";
+      }
+
+      x.style.display = "flex";
+      exeBtn.style.display = "block";
+      masBtn.style.display = "none";
+      bacBtn.style.display = "none";
+    }
+
+    function master() {
+      var exeBtn = document.getElementById("executive");
+      var masBtn = document.getElementById("master");
+      var bacBtn = document.getElementById("bachelor");
+      var slide = document.getElementsByClassName("slide-card");
+      var x = document.getElementById("pplr");
+      for (let index = 0; index < slide.length; index++) {
+        slide[index].style.display = "none";
+      }
+      x.style.display = "flex";
+
+      exeBtn.style.display = "none";
+      masBtn.style.display = "block";
+      bacBtn.style.display = "none";
+    }
+
+    function bachelor() {
+      var exeBtn = document.getElementById("executive");
+      var masBtn = document.getElementById("master");
+      var bacBtn = document.getElementById("bachelor");
+      var slide = document.getElementsByClassName("slide-card");
+      var x = document.getElementById("pplr2");
+      for (let index = 0; index < slide.length; index++) {
+        slide[index].style.display = "none";
+      }
+
+      x.style.display = "flex";
+
+      exeBtn.style.display = "none";
+      masBtn.style.display = "none";
+      bacBtn.style.display = "block";
+    }
+
+    var slideIndex1 = 1;
+    function sliderbtn(n) {
+      showDivs1(slideIndex1 += n);
+    }
+    function showDivs1(n) {
+      var i;
+      var x = document.getElementsByClassName("index-slide");
+
+      var l = document.getElementById("left-btn");
+      var r = document.getElementById("right-btn");
+
+      if (slideIndex1 == 2) {
+        l.style.visibility = "visible";
+      }
+
+      if (slideIndex1 == 1) {
+        l.style.visibility = "hidden";
+      }
+
+      if (slideIndex1 == 9) {
+        r.style.visibility = "hidden"
+      }
+      if (slideIndex1 < 9) {
+        r.style.visibility = "visible"
+      }
+
+      for (i = 0; i < x.length - 7; i = i + 6) {
+        x[i].style.display = "none";
+        x[i + 1].style.display = "none";
+        x[i + 2].style.display = "none";
+        x[i + 3].style.display = "none";
+        x[i + 4].style.display = "none";
+        x[i + 5].style.display = "none";
+        x[i + 6].style.display = "none";
+      }
+      x[slideIndex1 - 1].style.display = "flex";
+      x[slideIndex1].style.display = "flex";
+      x[slideIndex1 + 1].style.display = "flex";
+      x[slideIndex1 + 2].style.display = "flex";
+      x[slideIndex1 + 3].style.display = "flex";
+      x[slideIndex1 + 4].style.display = "flex";
+      x[slideIndex1 + 5].style.display = "flex";
+    }
+
+    var slideIndex2 = 1;
+    function sliderbtn2(n) {
+      showDivs2(slideIndex2 += n);
+    }
+    function showDivs2(n) {
+      var i;
+      var x = document.getElementsByClassName("index-slide1");
+      var l = document.getElementById("left-btn1");
+      var r = document.getElementById("right-btn1");
+
+      if (slideIndex2 == 2) {
+        l.style.visibility = "visible";
+      }
+
+      if (slideIndex2 == 1) {
+        l.style.visibility = "hidden";
+      }
+
+      if (slideIndex2 == 9) {
+        r.style.visibility = "hidden"
+      }
+      if (slideIndex2 < 9) {
+        r.style.visibility = "visible"
+      }
+
+      for (i = 0; i < x.length - 7; i = i + 6) {
+        x[i].style.display = "none";
+        x[i + 1].style.display = "none";
+        x[i + 2].style.display = "none";
+        x[i + 3].style.display = "none";
+        x[i + 4].style.display = "none";
+        x[i + 5].style.display = "none";
+        x[i + 6].style.display = "none";
+      }
+      x[slideIndex2 - 1].style.display = "flex";
+      x[slideIndex2].style.display = "flex";
+      x[slideIndex2 + 1].style.display = "flex";
+      x[slideIndex2 + 2].style.display = "flex";
+      x[slideIndex2 + 3].style.display = "flex";
+      x[slideIndex2 + 4].style.display = "flex";
+      x[slideIndex2 + 5].style.display = "flex";
+    }
+    var slideIndex3 = 1;
+    function sliderbtn3(n) {
+      showDivs2(slideIndex3 += n);
+    }
+    function showDivs3(n) {
+      var i;
+      var x = document.getElementsByClassName("index-slide2");
+      var l = document.getElementById("left-btn2");
+      var r = document.getElementById("right-btn2");
+
+      if (slideIndex3 == 2) {
+        l.style.visibility = "visible";
+      }
+
+      if (slideIndex3 == 1) {
+        l.style.visibility = "hidden";
+      }
+
+      if (slideIndex3 == 9) {
+        r.style.visibility = "hidden"
+      }
+      if (slideIndex3 < 9) {
+        r.style.visibility = "visible"
+      }
+
+      for (i = 0; i < x.length - 7; i = i + 6) {
+        x[i].style.display = "none";
+        x[i + 1].style.display = "none";
+        x[i + 2].style.display = "none";
+        x[i + 3].style.display = "none";
+        x[i + 4].style.display = "none";
+        x[i + 5].style.display = "none";
+        x[i + 6].style.display = "none";
+      }
+      x[slideIndex3 - 1].style.display = "flex";
+      x[slideIndex3].style.display = "flex";
+      x[slideIndex3 + 1].style.display = "flex";
+      x[slideIndex3 + 2].style.display = "flex";
+      x[slideIndex3 + 3].style.display = "flex";
+      x[slideIndex3 + 4].style.display = "flex";
+      x[slideIndex3 + 5].style.display = "flex";
+    }
+
+
+
+    function populer_show(a) {
+      var slide = document.getElementsByClassName("slide-card");
+      var x = document.getElementById(a);
+      for (var i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";
+      }
+      x.style.display = "flex";
+    }
   </script>
 
 
@@ -1882,4 +2041,5 @@ slider.addEventListener('mousemove', (e) => {
 
 
 </body>
+
 </html>
