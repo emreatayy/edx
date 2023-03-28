@@ -543,6 +543,13 @@ body{
   border: 0.5px solid rgb(221, 221, 221);
  }
 
+ .c_w_contant a{
+  margin-left: 460px; 
+  border: 1px solid rgb(201, 201, 201);
+  text-decoration: none;
+  color: black;
+  padding: 4px 15px;
+ }
  .c_w_master .slide-card div{
   background-color: #00262b;
   color: white;
@@ -1146,5 +1153,13 @@ body{
     }
     .mast{
       margin-top: 90px;
+    }
+
+    .exe-items div button{
+      background-color: white;
+      border: 1px solid black;
+      padding: 7px 12px;
+      border-radius: 5px;
+      box-sizing: border-box;
     }
   }
