@@ -1030,8 +1030,10 @@ body{
 
     .emee{
       margin-left: 70px;
+      margin-top: 5px;
       padding: 8px 22px;
       background-color: white;
+      border: 1px solid rgb(179, 179, 179);
     }
 
     .exe-items {
@@ -1122,5 +1124,27 @@ body{
 
     #showMbl-1{
       display: block;
+    }
+    .emre2{
+      display: none;
+    }
+
+    #showMbl2-1{
+      display: block;
+    }
+
+    .emre3{
+      display: none;
+    }
+
+    #showMbl3-1{
+      display: block;
+    }
+
+    .bach{
+      margin-top: 50px;
+    }
+    .mast{
+      margin-top: 90px;
     }
   }
