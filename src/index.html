@@ -1164,7 +1164,6 @@ slider.addEventListener('mousemove', (e) => {
     var exeBtn = document.getElementById("executive");
     var masBtn = document.getElementById("master");
     var bacBtn = document.getElementById("bachelor");
-
     exeBtn.style.display = "block";
     masBtn.style.display = "none";
     bacBtn.style.display = "none";
@@ -1174,7 +1173,6 @@ slider.addEventListener('mousemove', (e) => {
     var exeBtn = document.getElementById("executive");
     var masBtn = document.getElementById("master");
     var bacBtn = document.getElementById("bachelor");
-
     exeBtn.style.display = "none";
     masBtn.style.display = "block";
     bacBtn.style.display = "none";
@@ -1184,7 +1182,6 @@ slider.addEventListener('mousemove', (e) => {
     var exeBtn = document.getElementById("executive");
     var masBtn = document.getElementById("master");
     var bacBtn = document.getElementById("bachelor");
-
     exeBtn.style.display = "none";
     masBtn.style.display = "none";
     bacBtn.style.display = "block";
@@ -1194,28 +1191,24 @@ slider.addEventListener('mousemove', (e) => {
   function sliderbtn(n) {
     showDivs1(slideIndex1 += n);
   }
+
   function showDivs1(n){
     var i;
     var x = document.getElementsByClassName("index-slide");
-
     var l = document.getElementById("left-btn");
     var r = document.getElementById("right-btn");
-
     if (slideIndex1 ==2 ) {
       l.style.visibility = "visible";
     }
-
     if (slideIndex1 ==1 ) {
       l.style.visibility = "hidden";
     }
-
     if (slideIndex1 == 9) {
       r.style.visibility = "hidden"
     }
     if (slideIndex1 < 9) {
       r.style.visibility = "visible"
     }
-
     for (i = 0; i < x.length-7; i=i+6) {
       x[i].style.display = "none";  
       x[i+1].style.display = "none"; 
@@ -1238,27 +1231,24 @@ slider.addEventListener('mousemove', (e) => {
   function sliderbtn2(n) {
     showDivs2(slideIndex2 += n);
   }
+  //---------------------------------------
   function showDivs2(n){
     var i;
     var x = document.getElementsByClassName("index-slide1");
     var l = document.getElementById("left-btn1");
     var r = document.getElementById("right-btn1");
-
     if (slideIndex2 ==2 ) {
       l.style.visibility = "visible";
     }
-
     if (slideIndex2 ==1 ) {
       l.style.visibility = "hidden";
     }
-
     if (slideIndex2 == 9) {
       r.style.visibility = "hidden"
     }
     if (slideIndex2 < 9) {
       r.style.visibility = "visible"
     }
-
     for (i = 0; i < x.length-7; i=i+6) {
       x[i].style.display = "none";  
       x[i+1].style.display = "none"; 
@@ -1276,8 +1266,6 @@ slider.addEventListener('mousemove', (e) => {
     x[slideIndex1+4].style.display = "flex"; 
     x[slideIndex1+5].style.display = "flex"; 
   }
-
-
 
   function populer_show(a) {
     var slide = document.getElementsByClassName("slide-card");
