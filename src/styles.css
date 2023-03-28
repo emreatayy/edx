@@ -478,14 +478,12 @@ body{
 
  .c_w_master{
   display: none;
-  background-color: green;
   width: 100%;
   height: 500px;
  }
 
  .c_w_bachelor{
   display: none;
-  background-color: yellow;
   width: 100%;
   height: 500px;
  }
@@ -510,6 +508,20 @@ body{
   align-items: center;
   justify-content: space-around;
   width: 100%;
+ }
+
+ .index-btn2{
+  margin-left: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+
+ }
+
+ .index-btn2>button{
+  margin-right: 30px;
  }
 
 #left-btn{
