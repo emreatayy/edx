@@ -517,7 +517,39 @@ body{
   align-items: center;
   justify-content: left;
   width: 100%;
+ }
 
+ .Sliderman button{
+  background-color: white;
+  border-radius: 50%;
+ }
+
+ .Sliderman button:hover{
+  border: none;
+  background-color: black;
+  color: white;
+ }
+
+ .index-btn button, .index-btn1 button, .index-btn2 button{
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: white;
+ }
+ .c_w_containe button{
+  background-color: white;
+  cursor: pointer;
+ }
+ .c_w_containe hr{
+  border: 0.5px solid rgb(221, 221, 221);
+ }
+
+ .c_w_master .slide-card div{
+  background-color: #00262b;
+  color: white;
+ }
+ .c_w_master .slide-card div h5{
+  background-color: white;
+  color: black;
  }
 
  .index-btn2>button{
@@ -566,12 +598,14 @@ body{
   background-color: white;
   width: 24%;
   height: 400px;
-  box-shadow: 3px 3px 5px 5px #9c9c9c;
+  box-shadow: 2px 2px 3px 3px #9c9c9c;
+  border-radius: 10px;
 }
 
 .slide-card div img{
   width: 100%;
   height: 140px;
+  border-radius: 10px;
 }
 
 .slide-card div>:nth-child(2){
