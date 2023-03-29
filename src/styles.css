@@ -906,6 +906,10 @@ body{
   margin-top: -30px;
 }
 
+.audienceList div{
+  position: relative;
+}
+
 .auList svg{
   fill: white;
   transform: skew(12deg);
@@ -921,9 +925,40 @@ body{
 }
 
 
+/* Universal Desig */
+.universal-design{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
 
+.uniWrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
+.uniWrap div:nth-child(1){
+  max-width: 30%;
+}
 
+.universal-design h2{
+  font-size: 3.75rem;
+  margin-left: -700px;
+}
+
+.universal-design h3{
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+}
+
+.universal-design p{
+  box-sizing: border-box;
+}
 
 
 
@@ -1493,4 +1528,48 @@ body{
     .audienceList span{
       border-bottom: 1px solid red;
     }
+    /* Universal Desig */
+.universal-design{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  
+}
+
+.uniWrap{
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+}
+
+.uniWrap div:nth-child(1){
+  max-width: 100%;
+}
+.uniWrap div:nth-child(2){
+  width: 345px;
+}
+.uniWrap div:nth-child(2)>img{
+  width: 100%;
+}
+
+.universal-design h2{
+  font-size: 3.25rem;
+  margin-left: 0;
+  display: block;
+  width: 345px;
+  height: 115px;
+  padding: 0;
+}
+
+.universal-design h3{
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+}
+
+.universal-design p{
+  box-sizing: border-box;
+}
   }
