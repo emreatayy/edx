@@ -1011,9 +1011,27 @@ body{
   position: relative;
 }
 
+/* Subjects */
+.subjects{
+  position: relative;
+  background-color: #f2f0ef;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
+.sub-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-
+.sub-list div{
+  display: flex;
+  flex-direction: column;
+}
 
 
 
