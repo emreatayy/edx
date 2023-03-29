@@ -845,7 +845,9 @@ body{
   color: white;
 }
 
-
+.m-subject-cars{
+  display: none;
+}
 
 
 
@@ -1230,7 +1232,9 @@ body{
       margin-bottom: 5px;
     }
 
- 
+    .exeEdu{
+      margin-top: -50px;
+    }
 
     .emee{
       margin-left: 70px;
@@ -1358,5 +1362,32 @@ body{
       padding: 7px 12px;
       border-radius: 5px;
       box-sizing: border-box;
+    }
+
+    .subject-cars{
+      display: none;
+    }
+
+    .m-subject-cars{
+      display: flex;
+      position: relative;
+      margin-top: 1400px;
+      background: #f2f0ef;
+      height: 3100px;
+    }
+    .m-subject-cars>h2{
+      font-size: 3.5rem;
+      margin-left: 20px;
+    }
+    .m-subject-cars h1{
+      font-size: 1.7rem;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    .m-subject-cars main{
+      margin-top: 10px;
+    }
+    .msub{
+      margin-top: 7px;
     }
   }
