@@ -3458,33 +3458,29 @@
                 <button class="emee">Explore more Executive Education</button>
               </div>
           </div>
-        </div>
-        <!-- subject card -->
-        <div class="subject-cars">
+    </div>
+    <div class="subject-cars">
           <div class="subCarCont">
-
             <h2>Explore top courses</h2>
-
             <div class="mb4">
               <ul>
                 <li class="mb4-list">
-                  <button class="mb4-button" id="mb4-1" onclick="mb4('disp1','mb4-1')">Computer Science</button>
+                  <button class="mb4-button" id="mb4-1" onclick="mb4('disp1','mb4-1','Explore more Computer Science course')">Computer Science</button>
                 </li>
                 <li class="mb4-list">
-                  <button class="mb4-button" id="mb4-2" onclick="mb4('disp2','mb4-2')">Artificial Intelligence</button>
+                  <button class="mb4-button" id="mb4-2" onclick="mb4('disp2','mb4-2','Explore more AI course')">Artificial Intelligence</button>
                 </li>
                 <li class="mb4-list">
-                  <button class="mb4-button" id="mb4-3" onclick="mb4('disp3','mb4-3')">Data Science</button>
+                  <button class="mb4-button" id="mb4-3" onclick="mb4('disp3','mb4-3','Explore more Data Science courses')">Data Science</button>
                 </li>
                 <li class="mb4-list">
-                  <button class="mb4-button" id="mb4-4" onclick="mb4('disp4','mb4-4')">Business</button>
+                  <button class="mb4-button" id="mb4-4" onclick="mb4('disp4','mb4-4','Explore more Computer Science course','Explore more Business courses')">Business</button>
                 </li>
                 <li class="mb4-list">
-                  <button class="mb4-button" id="mb4-5" onclick="mb4('disp5','mb4-5')">Healthcare</button>
+                  <button class="mb4-button" id="mb4-5" onclick="mb4('disp5','mb4-5','Explore more Healthcaree courses')">Healthcare</button>
                 </li>
               </ul>
             </div>
-
             <div class="displayed-result">
               <div class="disp disp1" id="disp1">
                 <div>
@@ -3623,7 +3619,7 @@
                     <p>Remote Work Revolution for Everyone</p>
                     <p>HarvardX</p>
                     <a>Course</a>
-                  </div>q
+                  </div>
                 </div>
 
 
@@ -3657,6 +3653,7 @@
               </div>
 
             </div>
+            <button class="subject-span"><span id="subject-span">Explore more Computer Science course</span></button>
           </div>
 
         </div>
@@ -4071,12 +4068,14 @@
           z.style.display = "block";
         }
 
-        function mb4(x, btn) {
+        function mb4(x, btn,spn) {
           //disp disp1
           var disp = document.getElementsByClassName("disp");
           var y = document.getElementById(x);
           var bt = document.getElementById(btn);
           var mBtn = document.getElementsByClassName("mb4-button");
+          var mySpan = document.getElementById("subject-span");
+
 
           for (let index = 0; index < disp.length; index++) {
             disp[index].style.display = "none";
@@ -4085,6 +4084,7 @@
 
           bt.style.border = "1px solid black";
           y.style.display = "flex";
+          mySpan.innerHTML= spn;
         }
       </script>
 </body>

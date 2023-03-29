@@ -831,7 +831,19 @@ body{
   display: none;
 }
 
+.subject-span{
+  margin-top: 10px;
+  margin-left: 500px;
+  padding: 10px 10px;
+  text-align: center;
+  border: none;
+  background-color: white;
+}
 
+.subject-span:hover{
+  background-color: black;
+  color: white;
+}
 
 
 
@@ -1218,9 +1230,7 @@ body{
       margin-bottom: 5px;
     }
 
-    .exeEdu{
-      margin-top: -50px;
-    }
+ 
 
     .emee{
       margin-left: 70px;
