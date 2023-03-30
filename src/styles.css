@@ -1044,9 +1044,8 @@ body {
   margin-bottom: -80px;
 }
 
-
 /* footer */
-.footer{
+.footer {
   position: relative;
   width: 100%;
   height: 640px;
@@ -1055,21 +1054,21 @@ body {
   justify-content: center;
 }
 
-.footContainer{
+.footContainer {
   width: 1400px;
   height: 90%;
   display: flex;
   flex-direction: column;
 }
 
-.footerLogo{
+.footerLogo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.footerLogo ul{
+.footerLogo ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -1077,11 +1076,11 @@ body {
   justify-content: space-around;
 }
 
-.footerLogo li{
+.footerLogo li {
   margin: 0 5px;
 }
 
-.footerLogo ul li{
+.footerLogo ul li {
   width: 60px;
   height: 60px;
   background-color: black;
@@ -1090,7 +1089,7 @@ body {
   justify-content: center;
   border-radius: 50%;
 }
-.footerLogo ul svg{
+.footerLogo ul svg {
   width: 50px;
   height: 50px;
   fill: white;
@@ -1098,63 +1097,63 @@ body {
   padding: 4px;
 }
 
-.footerContact{
+.footerContact {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.footerContact h2{
+.footerContact h2 {
   line-height: 2.25rem;
   color: #00262b;
   font-size: 1rem;
   font-weight: 700;
 }
 
-.footerContact li{
+.footerContact li {
   cursor: pointer;
   line-height: 2rem;
 }
 
-.footerContact li:hover{
+.footerContact li:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.footerContact ul{
+.footerContact ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.footerContact div{
+.footerContact div {
   margin-left: 10px;
 }
 
-.footerContact>:nth-child(2){
+.footerContact > :nth-child(2) {
   margin-left: -200px;
 }
-.footerContact>:nth-child(3){
+.footerContact > :nth-child(3) {
   margin-left: -200px;
 }
-.footerContact>:nth-child(4){
+.footerContact > :nth-child(4) {
   margin-right: 10px;
 }
 
-.footerContact>:nth-child(4) div select{
+.footerContact > :nth-child(4) div select {
   padding: 10px 30px;
 }
-.footerContact>:nth-child(4) div button{
+.footerContact > :nth-child(4) div button {
   padding: 12px 30px;
   background-color: white;
   border: 1px solid rgb(216, 216, 216);
 }
-.footerContact>:nth-child(4) div button:hover{
+.footerContact > :nth-child(4) div button:hover {
   background-color: black;
   color: white;
 }
 
-.footerLink{
+.footerLink {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1162,7 +1161,7 @@ body {
   margin: 0 10px;
 }
 
-.store-img>:nth-child(2) img{
+.store-img > :nth-child(2) img {
   width: 140px;
 }
 /* -------------------------------------------
@@ -1868,130 +1867,129 @@ body {
   }
 
   /* footer */
-.footer{
-  position: relative;
-  width: 100%;
-  height: 640px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 550px;
-  width: 100%;
-}
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 550px;
+    width: 100%;
+  }
 
-.footContainer{
-  width: 100%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-}
+  .footContainer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
 
-.footerLogo{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0;
-}
+  .footerLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+  }
 
-.footerLogo ul{
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
+  .footerLogo ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
-.footerLogo li{
-  margin: 0 0;
-}
+  .footerLogo li {
+    margin: 0 0;
+  }
 
-.footerLogo ul li{
-  width: 40px;
-  height: 40px;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-.footerLogo ul svg{
-  width: 30px;
-  height: 30px;
-  fill: white;
-  box-sizing: border-box;
-  padding: 5px 0 0 0;
-}
+  .footerLogo ul li {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .footerLogo ul svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    box-sizing: border-box;
+    padding: 5px 0 0 0;
+  }
 
-.footerContact{
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: baseline;
-  margin-top: 0;
-  width: 100%;
+  .footerContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-top: 0;
+    width: 100%;
+  }
 
-}
+  .footerContact h2 {
+    line-height: 2.25rem;
+    color: #00262b;
+    font-size: 1rem;
+    font-weight: 700;
+  }
 
-.footerContact h2{
-  line-height: 2.25rem;
-  color: #00262b;
-  font-size: 1rem;
-  font-weight: 700;
-}
+  .footerContact li {
+    cursor: pointer;
+    line-height: 2rem;
+  }
 
-.footerContact li{
-  cursor: pointer;
-  line-height: 2rem;
-}
+  .footerContact li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 
-.footerContact li:hover{
-  cursor: pointer;
-  text-decoration: underline;
-}
+  .footerContact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.footerContact ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+  .footerContact div {
+    margin-left: 10px;
+  }
 
-.footerContact div{
-  margin-left: 10px;
-}
+  .footerContact > :nth-child(2) {
+    margin-left: -200px;
+  }
+  .footerContact > :nth-child(3) {
+    margin-left: -200px;
+  }
+  .footerContact > :nth-child(4) {
+    margin-right: 10px;
+  }
 
-.footerContact>:nth-child(2){
-  margin-left: -200px;
-}
-.footerContact>:nth-child(3){
-  margin-left: -200px;
-}
-.footerContact>:nth-child(4){
-  margin-right: 10px;
-}
+  .footerContact > :nth-child(4) div select {
+    padding: 10px 30px;
+  }
+  .footerContact > :nth-child(4) div button {
+    padding: 12px 30px;
+    background-color: white;
+    border: 1px solid rgb(216, 216, 216);
+  }
+  .footerContact > :nth-child(4) div button:hover {
+    background-color: black;
+    color: white;
+  }
 
-.footerContact>:nth-child(4) div select{
-  padding: 10px 30px;
-}
-.footerContact>:nth-child(4) div button{
-  padding: 12px 30px;
-  background-color: white;
-  border: 1px solid rgb(216, 216, 216);
-}
-.footerContact>:nth-child(4) div button:hover{
-  background-color: black;
-  color: white;
-}
+  .footerLink {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: baseline;
+    align-items: baseline;
+    margin: 10px 20px;
+  }
 
-.footerLink{
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: baseline;
-  align-items: baseline;
-  margin: 10px 20px;
-}
-
-.store-img>:nth-child(2) img{
-  width: 140px;
-}
+  .store-img > :nth-child(2) img {
+    width: 140px;
+  }
 }
