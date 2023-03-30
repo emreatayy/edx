@@ -383,7 +383,7 @@ body {
   display: flex;
   width: 900px;
   height: 80px;
-  margin-top: 120px;
+  margin-top: 150px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -1512,6 +1512,7 @@ body {
   .new-on-edx {
     width: 100%;
     position: relative;
+    margin-top: -60px;
   }
 
   .course_w {
