@@ -1018,19 +1018,41 @@ body{
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
+  height: 1000px;
 }
 
 .sub-list{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .sub-list div{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  margin: 10px 50px;
+  width: 400px;
+}
+
+.sub-list a{
+  color: #00262b;
+  text-decoration: none;
+}
+
+.sub-list p{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.subjects h2{
+  line-height: 1.25rem;
+  font-size:  0.75rem;
+  margin-left: -1300px;
+  margin-bottom: -80px;
 }
 
 
