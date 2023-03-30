@@ -1711,4 +1711,53 @@ body{
   position: relative;
   width: 300px;
 }
+
+/* Subjects */
+.subjects{
+  position: relative;
+  background-color: #f2f0ef;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 1000px;
+  margin-top: 610px;
+}
+
+.sub-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f2f0ef;
+  width: 100%;
+}
+
+.sub-list div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+
+.sub-list a{
+  color: #00262b;
+  text-decoration: none;
+}
+
+.sub-list p{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.subjects h2{
+  line-height: 1.25rem;
+  font-size:  0.75rem;
+  margin-left: -1300px;
+  margin-bottom: -80px;
+}
 }
