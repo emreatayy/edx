@@ -1791,7 +1791,8 @@ body {
     background-color: white;
     text-decoration: none;
     padding: 5px 13px;
-    margin-top: 400px;
+    margin-top: 300px;
+    z-index: 99;
   }
   .edx-main h2 {
     font-size: 0.75rem;
@@ -1807,14 +1808,16 @@ body {
   }
 
   .edx-main p {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     line-height: 3rem;
+    font-weight: 700;
     padding: 0;
     margin-bottom: 400px;
-    padding: 10px 110px 230px 10px;
+    padding: 0;
     z-index: 30;
     position: relative;
     width: 300px;
+    padding-bottom: 250px;
   }
 
   /* Subjects */
@@ -1828,6 +1831,7 @@ body {
     flex-direction: column;
     height: 1000px;
     margin-top: 610px;
+    padding-top: 8px;
   }
 
   .sub-list {
@@ -1837,6 +1841,7 @@ body {
     flex-direction: column;
     background-color: #f2f0ef;
     width: 100%;
+   
   }
 
   .sub-list div {
@@ -1883,12 +1888,13 @@ body {
     height: 90%;
     display: flex;
     flex-direction: column;
+   margin-top: 70px;
   }
 
   .footerLogo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 0;
   }
@@ -1896,13 +1902,11 @@ body {
   .footerLogo ul {
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    
   }
 
   .footerLogo li {
-    margin: 0 0;
+    margin: 0 0 0 10px;
   }
 
   .footerLogo ul li {
