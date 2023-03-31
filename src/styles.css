@@ -387,13 +387,13 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-right: -350px;
-  
+  margin-right: 0;
 }
 
 .carousel {
   display: flex;
   flex-direction: row;
+  margin-right: -300px;
 }
 
 .slider {
@@ -1457,13 +1457,15 @@ body {
 
   .grid-container {
     display: grid;
-    margin-left: -330px;
+    margin-left: -50px;
     margin-top: -100px;
   }
 
   .grid-item {
+    position: relative;
     background: white;
     width: 260px;
+    left: 10px;
   }
 
   .main {
@@ -1507,9 +1509,22 @@ body {
     display: none;
   }
 
+  .trust-bar {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 0;
+  }
+
   .trust_text {
     margin-left: -300px;
     font-size: 0.79rem;
+    margin-left: 1px;
   }
 
   /* New On EDX */
@@ -1555,6 +1570,10 @@ body {
     margin-top: -50px;
   }
 
+  .exe-trust{
+    margin-top: 20px;
+  }
+  
   .emee {
     margin-left: 70px;
     margin-top: 5px;
@@ -1577,6 +1596,7 @@ body {
     user-select: none;
     cursor: pointer;
     height: 30px;
+    padding-bottom: 10px;
   }
   .exe-items1 {
     position: relative;
@@ -1591,7 +1611,7 @@ body {
     cursor: pointer;
     height: 410px;
   }
-
+  
   .exeI {
     width: 300px;
     box-shadow: 2px 2px 3px 3px #9c9c9c;
