@@ -1543,19 +1543,28 @@ body {
     flex-direction: column;
   }
 
-  .course_m>:nth-child(1) .item:nth-child(1){
+  .m-subject-cars .course_m>:nth-child(1) .item:nth-child(1){
     background-color: #00262b;
     color: white;
   }
-  .course_m>:nth-child(2) .item:nth-child(3){
+  .m-subject-cars .course_m>:nth-child(2) .item:nth-child(3){
     background-color: #00262b;
     color: white;
   }
-  .course_m>:nth-child(4) .item:nth-child(2){
+  .m-subject-cars .course_m>:nth-child(4) .item:nth-child(2){
     background-color: #00262b;
     color: white;
   }
-  .course_m>:nth-child(5) .item{
+  .m-subject-cars .course_m>:nth-child(5) .item{
+    background-color: #00262b;
+    color: white;
+  }
+
+  .mast .exeI{
+    background-color: #00262b;
+    color: white;
+  }
+  .bach .exeI{
     background-color: #00262b;
     color: white;
   }
@@ -1610,6 +1619,13 @@ body {
     user-select: none;
     cursor: pointer;
     height: 410px;
+  }
+
+  .m-subject-cars .course_m>:nth-child(2) .exe-items1{
+    width: 940px;
+  }
+  .m-subject-cars .course_m>:nth-child(5) .exe-items1{
+    width: 940px;
   }
   
   .exeI {
