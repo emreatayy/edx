@@ -1585,12 +1585,13 @@ body {
   
   .emee {
     margin-left: 70px;
-    margin-top: 5px;
-    padding: 8px 22px;
+    margin-top: 10px;
+    padding: 12px 22px;
     background: #fff;
     border-color: #f2f0ef;
     width: 80%;
     margin-left: 30px;
+    border: none;
   }
 
   .exe-items {
