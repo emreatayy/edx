@@ -381,18 +381,19 @@ body {
 .trust-bar {
   position: relative;
   display: flex;
-  width: 900px;
+  width: 100%;
   height: 80px;
   margin-top: 150px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-left: 300px;
+  margin-right: 0;
 }
 
 .carousel {
   display: flex;
   flex-direction: row;
+  margin-right: -300px;
 }
 
 .slider {
@@ -741,6 +742,10 @@ body {
   background-color: black;
   color: white;
 }
+#disp5  div {
+  background-color: black;
+  color: white;
+}
 
 #disp2 div:nth-child(3) div {
   background-color: black;
@@ -849,14 +854,18 @@ body {
   height: 650px;
   margin-top: 100px;
   color: white;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
 
 .audienceContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0 200px;
+  width: 1300px;
+  margin-left: -100px;
 }
 
 .audienceList {
@@ -884,6 +893,8 @@ body {
 
 .audienceList p {
   font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.25rem;
 }
 
 .audienceList span {
@@ -1452,13 +1463,15 @@ body {
 
   .grid-container {
     display: grid;
-    margin-left: -330px;
+    margin-left: -50px;
     margin-top: -100px;
   }
 
   .grid-item {
+    position: relative;
     background: white;
     width: 260px;
+    left: 10px;
   }
 
   .main {
@@ -1502,9 +1515,22 @@ body {
     display: none;
   }
 
+  .trust-bar {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 0;
+  }
+
   .trust_text {
     margin-left: -300px;
     font-size: 0.79rem;
+    margin-left: 1px;
   }
 
   /* New On EDX */
@@ -1523,6 +1549,32 @@ body {
     flex-direction: column;
   }
 
+  .m-subject-cars .course_m>:nth-child(1) .item:nth-child(1){
+    background-color: #00262b;
+    color: white;
+  }
+  .m-subject-cars .course_m>:nth-child(2) .item:nth-child(3){
+    background-color: #00262b;
+    color: white;
+  }
+  .m-subject-cars .course_m>:nth-child(4) .item:nth-child(2){
+    background-color: #00262b;
+    color: white;
+  }
+  .m-subject-cars .course_m>:nth-child(5) .item{
+    background-color: #00262b;
+    color: white;
+  }
+
+  .mast .exeI{
+    background-color: #00262b;
+    color: white;
+  }
+  .bach .exeI{
+    background-color: #00262b;
+    color: white;
+  }
+
   .course_m > div {
     height: 550px;
     width: 100%;
@@ -1533,12 +1585,19 @@ body {
     margin-top: -50px;
   }
 
+  .exe-trust{
+    margin-top: 20px;
+  }
+  
   .emee {
     margin-left: 70px;
-    margin-top: 5px;
-    padding: 8px 22px;
-    background-color: white;
-    border: 1px solid rgb(179, 179, 179);
+    margin-top: 10px;
+    padding: 12px 22px;
+    background: #fff;
+    border-color: #f2f0ef;
+    width: 80%;
+    margin-left: 30px;
+    border: none;
   }
 
   .exe-items {
@@ -1553,6 +1612,7 @@ body {
     user-select: none;
     cursor: pointer;
     height: 30px;
+    padding-bottom: 10px;
   }
   .exe-items1 {
     position: relative;
@@ -1568,6 +1628,13 @@ body {
     height: 410px;
   }
 
+  .m-subject-cars .course_m>:nth-child(2) .exe-items1{
+    width: 940px;
+  }
+  .m-subject-cars .course_m>:nth-child(5) .exe-items1{
+    width: 940px;
+  }
+  
   .exeI {
     width: 300px;
     box-shadow: 2px 2px 3px 3px #9c9c9c;
@@ -1584,16 +1651,21 @@ body {
     height: 100px;
     object-fit: cover;
     border-radius: 3px;
+    position: relative;
+    z-index: 10;
   }
 
   .exeI > img:nth-child(2) {
+    position: relative;
     display: block;
     width: 100px;
     margin-top: -30px;
     margin-left: 30px;
     height: 40px;
-    color: white;
-    fill: white;
+    padding: 10px;
+    z-index: 20;
+    background: white;
+    border-radius: 4px;
   }
 
   .exeEdu > h1 {
@@ -1669,7 +1741,7 @@ body {
     position: relative;
     margin-top: 1400px;
     background: #f2f0ef;
-    height: 3100px;
+    height: 2850px;
   }
   .m-subject-cars > h2 {
     font-size: 3.5rem;
@@ -1684,7 +1756,8 @@ body {
     margin-top: 10px;
   }
   .msub {
-    margin-top: 7px;
+    margin-top: -37px;
+    width: 100%;
   }
 
   /* Audiences */
@@ -1699,6 +1772,7 @@ body {
     justify-content: center;
     padding: 0;
     margin-top: 35px;
+    margin-left: 0;
   }
   .audienceList {
     margin: 0;
@@ -1721,6 +1795,7 @@ body {
   .audienceList span {
     border-bottom: 1px solid red;
   }
+
   /* Universal Desig */
   .universal-design {
     position: relative;
@@ -1763,6 +1838,10 @@ body {
 
   .universal-design p {
     box-sizing: border-box;
+    color: #454545;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5555555556;
   }
 
   /* Edx Vision */
@@ -1791,12 +1870,15 @@ body {
     background-color: white;
     text-decoration: none;
     padding: 5px 13px;
-    margin-top: 400px;
+    margin-top: 300px;
+    z-index: 99;
   }
   .edx-main h2 {
     font-size: 0.75rem;
     line-height: 1.5rem;
     z-index: 2;
+    margin-top: 50px;
+    color: #e1dddb;
   }
 
   .edx-main img {
@@ -1807,14 +1889,16 @@ body {
   }
 
   .edx-main p {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     line-height: 3rem;
+    font-weight: 700;
     padding: 0;
     margin-bottom: 400px;
-    padding: 10px 110px 230px 10px;
+    padding: 0;
     z-index: 30;
     position: relative;
     width: 300px;
+    padding-bottom: 250px;
   }
 
   /* Subjects */
@@ -1828,6 +1912,7 @@ body {
     flex-direction: column;
     height: 1000px;
     margin-top: 610px;
+    padding-top: 8px;
   }
 
   .sub-list {
@@ -1837,6 +1922,7 @@ body {
     flex-direction: column;
     background-color: #f2f0ef;
     width: 100%;
+   
   }
 
   .sub-list div {
@@ -1883,12 +1969,13 @@ body {
     height: 90%;
     display: flex;
     flex-direction: column;
+   margin-top: 70px;
   }
 
   .footerLogo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 0;
   }
@@ -1896,13 +1983,11 @@ body {
   .footerLogo ul {
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    
   }
 
   .footerLogo li {
-    margin: 0 0;
+    margin: 0 0 0 10px;
   }
 
   .footerLogo ul li {
