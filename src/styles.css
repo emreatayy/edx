@@ -407,8 +407,8 @@ body {
   flex-direction: row;
 }
 
-.carousel-left,
-.carousel-right > button {
+.carousel-left
+,.carousel-right > button {
   margin-top: 50px;
 }
 .carousel-right {
@@ -426,6 +426,17 @@ body {
   visibility: hidden;
 }
 
+.carousel-right button:hover{
+  background-color: black;
+  fill: white;
+  border-radius: 50%;
+}
+.carousel-left button:hover{
+  background-color: black;
+  fill: white;
+  border-radius: 50%;
+}
+
 /* Slider */
 .slider {
   width: 50%;
@@ -436,7 +447,6 @@ body {
 }
 
 .trust_text {
-  margin-left: -350px;
   font-size: 1.3rem;
 }
 
@@ -463,11 +473,47 @@ body {
   flex-direction: column;
 }
 
-.c_w_containe button {
+.c_w_containe::after{
+  border: 1px solid black;
+}
+
+.c_w_containe{
+  margin-bottom: 15px;
+  padding-left: -30px;
+}
+
+.c_w_containe button:nth-child(1) {
+  position: absolute;
+  display: flex;
   border: 0;
   font-size: 1.25rem;
   margin-left: 10px;
   margin-bottom: 10px;
+  top: 176.5px;
+  border-bottom: 1px solid black;
+  z-index: 3;
+}
+.c_w_containe button:nth-child(2) {
+  position: absolute;
+  display: flex;
+  border: 0;
+  font-size: 1.25rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  top: 176.5px;
+  left: 210px;
+  border-bottom: 1px solid none;
+}
+.c_w_containe button:nth-child(3) {
+  position: absolute;
+  display: flex;
+  border: 0;
+  font-size: 1.25rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  top: 176.5px;
+  left: 400px;
+  border-bottom: 1px solid none;
 }
 
 .c_w_executive {
@@ -1186,7 +1232,7 @@ body {
   /* Header */
   .w-logo img {
     position: absolute;
-    top: -250%;
+    top: 15px;
     height: 50px;
     width: 50px;
     margin-left: 150px;
@@ -1464,7 +1510,7 @@ body {
   .grid-container {
     display: grid;
     margin-left: -50px;
-    margin-top: -100px;
+    margin-top: -70px;
   }
 
   .grid-item {

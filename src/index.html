@@ -219,7 +219,7 @@
 
     <!-- Windows Search Bar -->
     <div class="w-search-bar" id="wsbar" onclick="search()">
-      <input type="text" id="txt11" placeholder="Emre">
+      <input type="text" id="txt11" placeholder="   What do you want to learn?">
       <label for="txt1"></label>
 
       <button id="wsb">
@@ -252,7 +252,7 @@
       <div class="hero-container-main">
         <h1>Learning is what you make of it. <span>Make it yours at edX</span></h1>
         <form action="">
-          <input type="text">
+          <input type="text" placeholder="Search our 3000+ courses">
           <input type="submit" value="Search" placeholder="emre">
         </form>
         <a href="">Explore all courses</a>
@@ -299,9 +299,9 @@
         </div>
         <div class="carousel-right" id="carousel-right">
           <button onclick="plusDivs(6)">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img"
               focusable="false" aria-hidden="true">
-              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" fill="currentColor"></path>
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"></path>
             </svg>
           </button>
         </div>
@@ -368,10 +368,19 @@
       <h2> <span style="color: red; margin-left: 10px;">New</span> on edX</h2>
       <div class="course_w">
         <div class="c_w_containe">
-          <button onclick="executive()">Executive Education</button>
-          <button onclick="master()">Master's Degrees</button>
-          <button onclick="bachelor()">Bachelor's Degrees</button>
-          <hr>
+
+          <button id="exe__b" onclick="executive()">
+            Executive Education
+          </button>
+
+          <button id="mas__b" onclick="master()">
+            Master's Degrees
+          </button>
+
+          <button id="bac__b" onclick="bachelor()">
+            Bachelor's Degrees
+          </button>
+          <hr style="width: 98.5%;">
         </div>
         <div class="c_w_contant">
           <div class="c_w_executive" id="executive">
@@ -4410,12 +4419,22 @@
         });
 
         //new on edx
+
         function executive() {
           var exeBtn = document.getElementById("executive");
           var masBtn = document.getElementById("master");
           var bacBtn = document.getElementById("bachelor");
           var slide = document.getElementsByClassName("slide-card");
           var x = document.getElementById("populer1");
+
+          var exe__b = document.getElementById("exe__b");
+          var mas__b = document.getElementById("mas__b");
+          var bac__b = document.getElementById("bac__b");
+
+          exe__b.style.borderBottom = "1px solid black";
+          mas__b.style.borderBottom = "none";
+          bac__b.style.borderBottom = "none";
+
           for (let index = 0; index < slide.length; index++) {
             slide[index].style.display = "none";
           }
@@ -4432,6 +4451,15 @@
           var bacBtn = document.getElementById("bachelor");
           var slide = document.getElementsByClassName("slide-card");
           var x = document.getElementById("pplr");
+
+          var exe__b = document.getElementById("exe__b");
+          var mas__b = document.getElementById("mas__b");
+          var bac__b = document.getElementById("bac__b");
+
+          exe__b.style.borderBottom = "none";
+          mas__b.style.borderBottom = "1px solid black";
+          bac__b.style.borderBottom = "none";
+
           for (let index = 0; index < slide.length; index++) {
             slide[index].style.display = "none";
           }
@@ -4448,6 +4476,15 @@
           var bacBtn = document.getElementById("bachelor");
           var slide = document.getElementsByClassName("slide-card");
           var x = document.getElementById("pplr2");
+
+          var exe__b = document.getElementById("exe__b");
+          var mas__b = document.getElementById("mas__b");
+          var bac__b = document.getElementById("bac__b");
+
+          exe__b.style.borderBottom = "none";
+          mas__b.style.borderBottom = "none";
+          bac__b.style.borderBottom = "1px solid black";
+
           for (let index = 0; index < slide.length; index++) {
             slide[index].style.display = "none";
           }
