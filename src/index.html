@@ -268,10 +268,10 @@
     <div class="trust-bar">
       <div class="carousel">
         <div class="carousel-left" id="carousel-left">
-          <button onclick="plusDivs(-1)">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+          <button onclick="plusDivs(-6)">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img"
               focusable="false" aria-hidden="true">
-              <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"></path>
+              <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
             </svg>
           </button>
         </div>
@@ -293,10 +293,12 @@
             <li class="mySlides"><img src="assets/img/university/14adelaide.png" alt=""></li>
             <li class="mySlides"><img src="assets/img/university/15tuobc.png" alt=""></li>
             <li class="mySlides"><img src="assets/img/university/16tuoq.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/16tuoq.png" alt=""></li>
+            <li class="mySlides"><img src="assets/img/university/16tuoq.png" alt=""></li>
           </ul>
         </div>
         <div class="carousel-right" id="carousel-right">
-          <button onclick="plusDivs(1)">
+          <button onclick="plusDivs(6)">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
               focusable="false" aria-hidden="true">
               <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" fill="currentColor"></path>
@@ -4347,7 +4349,7 @@
           var l = document.getElementById("carousel-left");
           var r = document.getElementById("carousel-right");
 
-          if (slideIndex == 2) {
+          if (slideIndex == 7) {
             l.style.visibility = "visible";
           }
 
@@ -4355,14 +4357,14 @@
             l.style.visibility = "hidden";
           }
 
-          if (slideIndex == 11) {
+          if (slideIndex == 13) {
             r.style.visibility = "hidden"
           }
-          if (slideIndex < 11) {
+          if (slideIndex < 13) {
             r.style.visibility = "visible"
           }
 
-          for (i = 0; i < x.length - 5; i = i + 5) {
+          for (i = 0; i < 18 ; i+=6) {
             x[i].style.display = "none";
             x[i + 1].style.display = "none";
             x[i + 2].style.display = "none";
