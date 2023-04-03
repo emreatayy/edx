@@ -1590,7 +1590,11 @@ body {
   .new-on-edx {
     width: 100%;
     position: relative;
-    margin-top: -60px;
+    margin-top: 10px;
+  }
+
+  .new-on-edx h2{
+    margin-top: 0;
   }
 
   .course_w {
@@ -1601,6 +1605,8 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .course_m
 
   .m-subject-cars .course_m>:nth-child(1) .item:nth-child(1){
     background-color: #00262b;
@@ -1628,18 +1634,48 @@ body {
     color: white;
   }
 
-  .course_m > div {
-    height: 550px;
-    width: 100%;
-    margin-bottom: 5px;
-  }
-
   .exeEdu {
-    margin-top: -50px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: center;
+    height: 100%;
   }
 
   .exe-trust{
     margin-top: 20px;
+  }
+  .top-edx .emre{
+    margin-top: -10px;
+  }
+
+  .top-edx .mast{
+    margin-top: 15px;
+  }
+  .top-edx .bach{
+    margin-top: 15px;
+  }
+
+  .exe-items1{
+    display: flex;
+  }
+
+  .top-edx .exe .emre .item{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 281px;
+    height: 374px;
+  }
+  
+  .top-edx .exe .emre .item>:nth-child(1){
+    width: 100%
+  };
+  
+  .finalx{
+    color: yellowgreen;
+
   }
   
   .emee {
@@ -1650,7 +1686,7 @@ body {
     border-color: #f2f0ef;
     width: 80%;
     margin-left: 30px;
-    border: none;
+    border: 1px solid rgb(204, 204, 204);
   }
 
   .exe-items {
@@ -1723,7 +1759,8 @@ body {
 
   .exeEdu > h1 {
     margin-left: 20px;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    line-height: 2.5rem;
   }
 
   .exeI h2 {
@@ -1738,14 +1775,29 @@ body {
     word-wrap: break-word;
   }
 
+  .exeI{
+    position: relative;
+  }
+
+  .exeI>:nth-child(2){
+    box-shadow: 1px 1px 1px 1px black;
+  }
+
   .exeI div {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
     font-size: 0.8rem;
-    margin-left: 20px;
     word-wrap: break-word;
-    background-color: #bebebe;
-    width: 110px;
+    background-color: #f1f1f1;
     text-align: center;
-    margin-top: 130px;
+    padding: 0;
+  }
+
+  .exeI div h5{
+    padding: 0;
+    width: 100%;
+    height: 100%;
   }
   .emre {
     display: none;
